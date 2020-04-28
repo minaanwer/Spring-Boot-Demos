@@ -1,6 +1,5 @@
 package net.guides.springboot2.crud.controller;
 
-
 import net.guides.springboot2.crud.exception.ResourceNotFoundException;
 import net.guides.springboot2.crud.model.Employee;
 import net.guides.springboot2.crud.repository.EmployeeRepository;
@@ -57,7 +56,5 @@ public class EmployeeController {
         response.put("deleted", Boolean.TRUE);
         return response;
     }
-
-
 
 }
