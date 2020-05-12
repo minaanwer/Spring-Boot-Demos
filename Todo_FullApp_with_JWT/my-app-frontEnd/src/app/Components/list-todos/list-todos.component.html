@@ -1,0 +1,58 @@
+<div class="container MT50 BodyContainer">
+
+  <div *ngIf='htmlmsg' class="alert alert-danger alert-dismissible fade show">
+    <button type="button" class="close" data-dismiss="alert">&times;</button>
+    <div class="dangerRow"> {{htmlmsg}} </div>
+  </div>
+
+  <div *ngIf='htmlSuccessmsg' class="alert alert-success alert-dismissible fade show">
+    <button type="button" class="close" data-dismiss="alert">&times;</button>
+    <div class="success"> {{htmlSuccessmsg}} </div>
+  </div>
+
+  <table class="table table-borderless">
+    <tbody>
+      <tr class="d-flex">
+        <td class="col-4"><h1>Todo's</h1></td>
+        <td class="col-3"> </td>
+        <td class="col-3"> </td>
+        <td class="col-2"> </td>
+      </tr>
+
+      <tr class="d-flex">
+        <td class="col-4"></td>
+        <td class="col-3"> </td>
+        <td class="col-3"> </td>
+        <td class="col-2"> <button class="right" (click)="addBtnClicked()" type="button"class="btn btn-outline-success">Add Todo </button></td>
+      </tr>
+
+    </tbody>
+  </table>
+
+
+  <table class="table table-hover">
+    <thead>
+      <tr class="d-flex">
+        <th class="col-1" scope="col">Id</th>
+        <th class="col-3" scope="col">Description</th>
+        <th class="col-2" scope="col">Target Date</th>
+        <th class="col-2" scope="col">Done</th>
+        <th class="col-2" scope="col"></th>
+        <th class="col-2" scope="col"></th>
+      </tr>
+
+    </thead>
+    <tbody>
+      <tr class="d-flex" *ngFor="let todo of todos">
+        <td class="col-1"> {{todo.id}}</td>
+        <td class="col-3"> {{todo.description}}</td>
+        <td class="col-2"> {{todo.targetDate | date }}</td>
+        <td class="col-2"> {{todo.done}}</td>
+        <td class="col-2"> <button (click)="updateBtnClicked(todo.id)" type="button"
+            class="btn btn-outline-success">Edit</button></td>
+        <td class="col-2"> <button (click)="deleteBtnClicked(todo.id)" type="button"
+            class="btn btn-outline-danger">Remove</button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>

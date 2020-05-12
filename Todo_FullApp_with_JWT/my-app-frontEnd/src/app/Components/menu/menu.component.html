@@ -1,0 +1,18 @@
+<header>
+
+<nav class="navbar navbar-expand-md navbar-dark bg-dark ">
+    <div> <a href="www.google.com" class="navbar-brand"> EBC </a> </div>
+  
+      <ul class="navbar-nav" >
+         <li> <a routerLink="/welcom/monna" class="nav-link" *ngIf="this.HardCodedAuth.isUserLoggedIn()"  >  Home   </a> </li>
+         <li> <a routerLink="/todos" class="nav-link" *ngIf="this.HardCodedAuth.isUserLoggedIn()"  >  Todos  </a>  </li>  
+      </ul>
+    
+      <ul class="navbar-nav navbar-collapse  justify-content-end ">
+        <li> <a routerLink="/login" class="nav-link" *ngIf="!this.HardCodedAuth.isUserLoggedIn()"  >  Login   </a> </li>
+        <li> <a routerLink="/logout" class="nav-link" *ngIf="this.HardCodedAuth.isUserLoggedIn()"  >  Logout  </a>  </li>  
+     </ul>
+
+</nav>
+
+</header>
