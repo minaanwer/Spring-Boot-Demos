@@ -1,12 +1,17 @@
 package users.ui.controllers;
 
+import org.modelmapper.ModelMapper;
+import org.modelmapper.convention.MatchingStrategies;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.env.Environment;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
+import users.Service.UsersService;
+import users.shared.UserDto;
 import users.ui.models.CreateUserRequestModel;
+import users.ui.models.CreatedReponseModel;
 
 import javax.validation.Valid;
 
@@ -16,16 +21,26 @@ public class UsersController{
 
     @Autowired
     public Environment env;
+
+    @Autowired
+    UsersService usersService;
+
     @GetMapping("status/check")
     public  String statusCheck(){
         return  "accounts Service says  :  i'm woorking .. on port "+env.getProperty("local.server.port") ;
     }
 
 
-    @PostMapping
-    public String createUser(@Valid CreateUserRequestModel userDetails){
 
-        return "yes , its ok !" ;
+    @PostMapping(path = "" , produces = {MediaType.APPLICATION_XML_VALUE , MediaType.APPLICATION_JSON_VALUE}
+    ,consumes = {MediaType.APPLICATION_XML_VALUE , MediaType.APPLICATION_JSON_VALUE})
+    public ResponseEntity<CreatedReponseModel>  createUser(@Valid @RequestBody CreateUserRequestModel userDetails){
+        ModelMapper modelMapper = new ModelMapper();
+        modelMapper.getConfiguration().setMatchingStrategy(MatchingStrategies.STRICT) ;
+        UserDto userDto =  modelMapper.map(userDetails,UserDto.class);
+        UserDto responceDto =  usersService.CreateUser(userDto);
+
+       return ResponseEntity.status(HttpStatus.CREATED).body( new ModelMapper().map(responceDto,CreatedReponseModel.class));
     }
 
 
