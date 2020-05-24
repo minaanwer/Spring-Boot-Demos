@@ -7,6 +7,9 @@ import java.io.Serializable;
 @Table()
 public class userEntity implements Serializable {
 
+
+
+
     private static final long serialVersionUID = -6655522883488945895L;
 
     @Id
@@ -22,7 +25,7 @@ public class userEntity implements Serializable {
     @Column(nullable = false,length = 50)
     private String  email;
 
-    @Column(nullable = false,length = 50)
+    @Column(nullable = false,length = 500)
     private String password;
 
     @Column(nullable = false,length = 50)
@@ -35,8 +38,6 @@ public class userEntity implements Serializable {
     public userEntity() {
 
     }
-
-
 
     public static long getSerialVersionUID() {
         return serialVersionUID;
