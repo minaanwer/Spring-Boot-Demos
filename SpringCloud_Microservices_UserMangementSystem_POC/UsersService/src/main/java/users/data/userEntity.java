@@ -1,5 +1,7 @@
 package users.data;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import javax.persistence.*;
 import java.io.Serializable;
 
@@ -17,6 +19,7 @@ public class userEntity implements Serializable {
     private Long Id;
 
     @Column(nullable = false,length = 50)
+    @JsonIgnoreProperties(ignoreUnknown = true)
     private String firstname ;
 
     @Column(nullable = false,length = 50)
