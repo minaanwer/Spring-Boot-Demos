@@ -12,6 +12,7 @@ import users.Service.UsersService;
 import users.shared.UserDto;
 import users.ui.models.CreateUserRequestModel;
 import users.ui.models.CreatedReponseModel;
+import users.ui.models.UserResponseModel;
 
 import javax.validation.Valid;
 
@@ -28,12 +29,9 @@ public class UsersController{
     @GetMapping("status/check")
     public  String statusCheck(){
         return  "accounts Service says  :  i'm woorking .. on port "+ env.getProperty("local.server.port")  + "and secret key is : " + env.getProperty("token.secret") ;
-    //return "";
     }
     @GetMapping("status/check/temp")
     public  String statusCheckTemp(){
-    // return  "accounts Service says  :  i'm woorking .. on port "+ env.getProperty("local.server.port")  + "and secret key is : " + env.getProperty("token.secret") ;
-        // return "";
         return "temp is working";
     }
 
@@ -49,6 +47,14 @@ public class UsersController{
         UserDto responceDto =  usersService.CreateUser(userDto);
 
        return ResponseEntity.status(HttpStatus.CREATED).body( new ModelMapper().map(responceDto,CreatedReponseModel.class));
+    }
+
+
+  @GetMapping(value = "/{userId}")
+    public ResponseEntity<UserResponseModel> getUser(@PathVariable("userId") String userId){
+        UserDto userDto = usersService.getUserByUserId(userId);
+        UserResponseModel returnValue = new ModelMapper().map(userDto,UserResponseModel.class);
+       return ResponseEntity.status(HttpStatus.OK).body(returnValue);
     }
 
 
