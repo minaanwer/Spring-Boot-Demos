@@ -106,8 +106,10 @@ public class UsersServiceImp implements  UsersService {
         userDto.setAlbums(albumsList);
          */
         List<AlbumResponseModel> albums =null;
-
+           logger.debug("before service run");
             albums =   albumsServiceClient.getAlbums(userId);
+            logger.debug("after service run");
+
 
         userDto.setAlbums(albums);
         return userDto;
