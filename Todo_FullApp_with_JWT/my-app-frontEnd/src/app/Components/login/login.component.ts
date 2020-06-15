@@ -40,6 +40,8 @@ console.log('loginClicked')
          console.log(data)
          this.invalidlogin = false
          sessionStorage.setItem('authenticatedUser', this.username)
+         
+         
          this.router.navigate(['welcom', this.username])
         },
        error => {
