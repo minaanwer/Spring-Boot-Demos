@@ -22,7 +22,7 @@ public class GlobalExceptionHandler {
 
         ResponseModel<ErrorDetails> responseModel = new ResponseModel<>("001", ex.getMessage(), errorDetails);
 
-        return new ResponseEntity<>(responseModel, HttpStatus.BAD_REQUEST);
+        return new ResponseEntity<>(responseModel, HttpStatus.OK);
     }
 
 
