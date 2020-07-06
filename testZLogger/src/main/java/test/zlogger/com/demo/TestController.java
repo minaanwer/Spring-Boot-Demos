@@ -1,7 +1,6 @@
 package test.zlogger.com.demo;
 
-import com.ebc.zLogger.helper.LoggerUserInfo;
-import com.ebc.zLogger.zLogger;
+
 import org.apache.catalina.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -9,26 +8,17 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.lang.reflect.Field;
 import java.util.Collection;
+import java.util.Dictionary;
+import java.util.Hashtable;
 import java.util.List;
 
 @RestController
 public class TestController {
 
-    @Autowired
-    myService myservice;
-
 
 @GetMapping()
 public String  checkStatus(){
 
-    zLogger logger = new zLogger("myLoggingSystem" , new LoggerUserInfo(1,"monna",1,"",1,"monnaBank"));
-    logger.addMessage("first Message","hi");
-    logger.addMessage("2 Message","hi");
-    logger.addMessage("3 Message","hi");
-    logger.addMessage("4 Message","hi");
-    logger.logData("log Data Action for test ");
-
-    myservice.Authenticate(logger);
 
 
     return  "I'm Ok ";
@@ -43,19 +33,16 @@ public String  checkStatus(){
 
 
 
-        Field[] fields = user.getClass().getDeclaredFields();
+        Dictionary keyValuePair =  getMembers(user,UserDTO.class);
 
 
-        getMembers(UserDTO.class);
-
-      //  Logger logger = new Logger();
-      //  return logger.log(user , UserDTO.class);
-      return null;
+    return null;
     }
 
 
-    public  void getMembers(Class c) throws ClassNotFoundException
-    {
+    public  Dictionary getMembers(Object obj ,Class c) throws ClassNotFoundException {
+        Dictionary keyValuePair = new Hashtable();
+
         Field[] fields = c.getDeclaredFields();
 
         for (Field f : fields)
@@ -63,6 +50,7 @@ public String  checkStatus(){
             if (f.getType().isPrimitive() || f.getType().equals(String.class))
             {
                 System.out.println(c.getSimpleName() + ": " + f.getName() + " is a "+ f.getType().getSimpleName());
+                keyValuePair.put(f.getName(),GetValue(obj,c,f) );
             }
             else
             {
@@ -72,15 +60,38 @@ public String  checkStatus(){
                     String type = s.split("\\<")[1].split("\\>")[0];
                     Class clazz = Class.forName(type);
                     System.out.println(c.getSimpleName()+ ": "+ f.getName()+ " is a collection of "+ clazz.getSimpleName());
-                    getMembers(clazz);
+                    keyValuePair.put(f.getName(),GetValue(obj,c,f) );
+                    getMembers(obj,clazz);
                 }
                 else
                 {
                     System.out.println(c.getSimpleName() + ": " + f.getName() + " is a "+ f.getType().getSimpleName());
-                    getMembers(f.getType());
+                    keyValuePair.put(f.getName(),GetValue(obj,c,f) );
+                    getMembers(obj, f.getType());
                 }
             }
         }
+        return keyValuePair;
+    }
+
+
+   String  GetValue(Object obj ,Class c , Field f ){
+
+    try {
+        //Field field = c.getClass().getDeclaredField(f.getName());
+        //field.setAccessible(true);
+        //Object value = field.getName(obj);
+        String iWantThis = (String) f.get(obj);
+        return iWantThis ;
+    }
+    catch (Exception ex){
+        return "Error";
+    }
+
+
+
+
+
     }
 
 
