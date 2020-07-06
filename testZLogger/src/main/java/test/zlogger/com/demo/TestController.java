@@ -13,9 +13,6 @@ public class TestController {
 
 @GetMapping()
 public String  checkStatus(){
-
-
-
     return  "I'm Ok ";
 }
 
@@ -67,14 +64,12 @@ public String  checkStatus(){
 
 
    String  GetValue(Object obj ,Class c , Field f ){
-
-    try {
-        String iWantThis = (String) f.get(obj);
-        return iWantThis ;
-    }
-    catch (Exception ex){
+     try {
+           String iWantThis = (String) f.get(obj);
+           return iWantThis ;
+      }
+      catch (Exception ex){
         return "Error";
-    }
-
+      }
     }
 }
