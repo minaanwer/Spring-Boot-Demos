@@ -11,25 +11,25 @@ import java.util.Hashtable;
 public class TestController {
 
 
-@GetMapping()
-public String  checkStatus(){
-    return  "I'm Ok ";
-}
+    @GetMapping()
+    public String  checkStatus(){
+        return  "I'm Ok ";
+    }
 
 
 
 
     @GetMapping("propLst")
-    public Dictionary GetPropList() throws ClassNotFoundException {
-        UserDTO user = new UserDTO("mon","ageData","Ndata",new Tele("we","mob"));
+    public Dictionary GetPropList() throws IllegalAccessException {
+        UserDTO user = new UserDTO("mon","ageData","Ndata",new Tele("we","mob" , new Tele2("tel2","tele2Num")));
 
-        Dictionary keyValuePair =  getMembers(user,UserDTO.class);
+        Dictionary keyValuePair = new Hashtable();
+        keyValuePair =  getMembers(user, user.getClass(), keyValuePair);
         return keyValuePair;
     }
 
 
-    public  Dictionary getMembers(Object obj ,Class c) throws ClassNotFoundException {
-        Dictionary keyValuePair = new Hashtable();
+    public  Dictionary getMembers(Object obj, Class c, Dictionary dict) throws IllegalAccessException {
 
         Field[] fields = c.getDeclaredFields();
 
@@ -38,38 +38,24 @@ public String  checkStatus(){
             if (f.getType().isPrimitive() || f.getType().equals(String.class))
             {
                 System.out.println(c.getSimpleName() + ": " + f.getName() + " is a "+ f.getType().getSimpleName());
-                keyValuePair.put(f.getName(),GetValue(obj,c,f) );
+                dict.put(f.getName(),GetValue(obj,c,f) );
             }
             else
             {
-                if (Collection.class.isAssignableFrom(f.getType()))
-                {
-                    String s = f.toGenericString();
-                    String type = s.split("\\<")[1].split("\\>")[0];
-                    Class clazz = Class.forName(type);
-                    System.out.println(c.getSimpleName()+ ": "+ f.getName()+ " is a collection of "+ clazz.getSimpleName());
-                    keyValuePair.put(f.getName(),GetValue(obj,c,f) );
-                    getMembers(obj,clazz);
-                }
-                else
-                {
-                    System.out.println(c.getSimpleName() + ": " + f.getName() + " is a "+ f.getType().getSimpleName());
-                    keyValuePair.put(f.getName(),GetValue(obj,c,f) );
-                    getMembers(obj, f.getType());
-                }
+                getMembers(f.get(obj), f.getType(),dict);
             }
         }
-        return keyValuePair;
+        return dict;
     }
 
 
-   String  GetValue(Object obj ,Class c , Field f ){
-     try {
-           String iWantThis = (String) f.get(obj);
-           return iWantThis ;
-      }
-      catch (Exception ex){
-        return "Error";
-      }
+    String  GetValue(Object obj ,Class c , Field f ){
+        try {
+            String iWantThis = (String) f.get(obj);
+            return iWantThis ;
+        }
+        catch (Exception ex){
+            return "Error";
+        }
     }
 }
