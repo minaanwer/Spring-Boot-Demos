@@ -1,0 +1,114 @@
+2020-07-06 11:07:05.879  INFO 1192 --- [restartedMain] test.zlogger.com.demo.DemoApplication    : Starting DemoApplication on M-LEWES with PID 1192 (D:\D-JWorkSpace\testZLogger\target\classes started by m.lewes in D:\D-JWorkSpace\testZLogger)
+2020-07-06 11:07:05.882  INFO 1192 --- [restartedMain] test.zlogger.com.demo.DemoApplication    : No active profile set, falling back to default profiles: default
+2020-07-06 11:07:05.980  INFO 1192 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-07-06 11:07:05.980  INFO 1192 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-07-06 11:07:07.934  INFO 1192 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9999 (http)
+2020-07-06 11:07:07.952  INFO 1192 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-06 11:07:07.954  INFO 1192 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-07-06 11:07:08.141  INFO 1192 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-06 11:07:08.144  INFO 1192 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2164 ms
+2020-07-06 11:07:08.431  INFO 1192 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-06 11:07:08.652  INFO 1192 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-06 11:07:08.715  INFO 1192 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9999 (http) with context path ''
+2020-07-06 11:07:08.733  INFO 1192 --- [restartedMain] test.zlogger.com.demo.DemoApplication    : Started DemoApplication in 3.541 seconds (JVM running for 6.464)
+2020-07-06 11:12:26.276  INFO 10460 --- [restartedMain] test.zlogger.com.demo.DemoApplication    : Starting DemoApplication on M-LEWES with PID 10460 (D:\D-JWorkSpace\testZLogger\target\classes started by m.lewes in D:\D-JWorkSpace\testZLogger)
+2020-07-06 11:12:26.284  INFO 10460 --- [restartedMain] test.zlogger.com.demo.DemoApplication    : No active profile set, falling back to default profiles: default
+2020-07-06 11:12:26.426  INFO 10460 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-07-06 11:12:26.427  INFO 10460 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-07-06 11:12:27.887  INFO 10460 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9999 (http)
+2020-07-06 11:12:27.899  INFO 10460 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-06 11:12:27.900  INFO 10460 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-07-06 11:12:28.003  INFO 10460 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-06 11:12:28.004  INFO 10460 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1576 ms
+2020-07-06 11:12:28.286  INFO 10460 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-06 11:12:28.548  INFO 10460 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-06 11:12:28.622  INFO 10460 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9999 (http) with context path ''
+2020-07-06 11:12:28.646  INFO 10460 --- [restartedMain] test.zlogger.com.demo.DemoApplication    : Started DemoApplication in 3.39 seconds (JVM running for 7.277)
+2020-07-06 11:13:26.688  INFO 10460 --- [http-nio-9999-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-06 11:13:26.688  INFO 10460 --- [http-nio-9999-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-06 11:13:26.703  INFO 10460 --- [http-nio-9999-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 15 ms
+2020-07-06 11:14:29.132  INFO 10460 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-07-06 11:14:38.769  INFO 2192 --- [restartedMain] test.zlogger.com.demo.DemoApplication    : Starting DemoApplication on M-LEWES with PID 2192 (D:\D-JWorkSpace\testZLogger\target\classes started by m.lewes in D:\D-JWorkSpace\testZLogger)
+2020-07-06 11:14:38.773  INFO 2192 --- [restartedMain] test.zlogger.com.demo.DemoApplication    : No active profile set, falling back to default profiles: default
+2020-07-06 11:14:38.873  INFO 2192 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-07-06 11:14:38.873  INFO 2192 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-07-06 11:14:40.386  INFO 2192 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9999 (http)
+2020-07-06 11:14:40.397  INFO 2192 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-06 11:14:40.398  INFO 2192 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-07-06 11:14:40.517  INFO 2192 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-06 11:14:40.517  INFO 2192 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1644 ms
+2020-07-06 11:14:40.780  INFO 2192 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-06 11:14:40.967  INFO 2192 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-06 11:14:41.024  INFO 2192 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9999 (http) with context path ''
+2020-07-06 11:14:41.041  INFO 2192 --- [restartedMain] test.zlogger.com.demo.DemoApplication    : Started DemoApplication in 3.162 seconds (JVM running for 5.856)
+2020-07-06 11:18:48.732  INFO 2192 --- [http-nio-9999-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-06 11:18:48.732  INFO 2192 --- [http-nio-9999-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-06 11:18:48.746  INFO 2192 --- [http-nio-9999-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 14 ms
+2020-07-06 11:26:05.516  INFO 2192 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-07-06 11:26:21.953  INFO 18676 --- [restartedMain] test.zlogger.com.demo.DemoApplication    : Starting DemoApplication on M-LEWES with PID 18676 (D:\D-JWorkSpace\testZLogger\target\classes started by m.lewes in D:\D-JWorkSpace\testZLogger)
+2020-07-06 11:26:21.980  INFO 18676 --- [restartedMain] test.zlogger.com.demo.DemoApplication    : No active profile set, falling back to default profiles: default
+2020-07-06 11:26:22.148  INFO 18676 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-07-06 11:26:22.149  INFO 18676 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-07-06 11:26:25.606  INFO 18676 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9999 (http)
+2020-07-06 11:26:25.632  INFO 18676 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-06 11:26:25.636  INFO 18676 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-07-06 11:26:25.922  INFO 18676 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-06 11:26:25.923  INFO 18676 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3773 ms
+2020-07-06 11:26:26.481  INFO 18676 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-06 11:26:26.771  INFO 18676 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-06 11:26:26.835  INFO 18676 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9999 (http) with context path ''
+2020-07-06 11:26:26.853  INFO 18676 --- [restartedMain] test.zlogger.com.demo.DemoApplication    : Started DemoApplication in 6.703 seconds (JVM running for 11.662)
+2020-07-06 11:26:28.892  INFO 18676 --- [http-nio-9999-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-06 11:26:28.892  INFO 18676 --- [http-nio-9999-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-06 11:26:28.902  INFO 18676 --- [http-nio-9999-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2020-07-06 11:34:17.572  INFO 18676 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-07-06 11:38:26.401  INFO 16940 --- [restartedMain] test.zlogger.com.demo.DemoApplication    : Starting DemoApplication on M-LEWES with PID 16940 (D:\D-JWorkSpace\testZLogger\target\classes started by m.lewes in D:\D-JWorkSpace\testZLogger)
+2020-07-06 11:38:26.417  INFO 16940 --- [restartedMain] test.zlogger.com.demo.DemoApplication    : No active profile set, falling back to default profiles: default
+2020-07-06 11:38:26.562  INFO 16940 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-07-06 11:38:26.563  INFO 16940 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-07-06 11:38:28.770  INFO 16940 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9999 (http)
+2020-07-06 11:38:28.787  INFO 16940 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-06 11:38:28.787  INFO 16940 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-07-06 11:38:28.924  INFO 16940 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-06 11:38:28.924  INFO 16940 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2359 ms
+2020-07-06 11:38:29.206  INFO 16940 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-06 11:38:29.438  INFO 16940 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-06 11:38:29.500  INFO 16940 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9999 (http) with context path ''
+2020-07-06 11:38:29.522  INFO 16940 --- [restartedMain] test.zlogger.com.demo.DemoApplication    : Started DemoApplication in 3.93 seconds (JVM running for 6.286)
+2020-07-06 11:38:33.203  INFO 16940 --- [http-nio-9999-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-06 11:38:33.203  INFO 16940 --- [http-nio-9999-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-06 11:38:33.213  INFO 16940 --- [http-nio-9999-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2020-07-06 11:38:49.373  INFO 16940 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-07-06 11:41:30.369  INFO 17988 --- [restartedMain] test.zlogger.com.demo.DemoApplication    : Starting DemoApplication on M-LEWES with PID 17988 (D:\D-JWorkSpace\testZLogger\target\classes started by m.lewes in D:\D-JWorkSpace\testZLogger)
+2020-07-06 11:41:30.376  INFO 17988 --- [restartedMain] test.zlogger.com.demo.DemoApplication    : No active profile set, falling back to default profiles: default
+2020-07-06 11:41:30.518  INFO 17988 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-07-06 11:41:30.518  INFO 17988 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-07-06 11:41:32.133  INFO 17988 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9999 (http)
+2020-07-06 11:41:32.171  INFO 17988 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-06 11:41:32.173  INFO 17988 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-07-06 11:41:32.349  INFO 17988 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-06 11:41:32.349  INFO 17988 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1830 ms
+2020-07-06 11:41:32.614  INFO 17988 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-06 11:41:32.824  INFO 17988 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-06 11:41:32.877  INFO 17988 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9999 (http) with context path ''
+2020-07-06 11:41:32.891  INFO 17988 --- [restartedMain] test.zlogger.com.demo.DemoApplication    : Started DemoApplication in 3.396 seconds (JVM running for 5.73)
+2020-07-06 11:41:41.849  INFO 17988 --- [http-nio-9999-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-06 11:41:41.849  INFO 17988 --- [http-nio-9999-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-06 11:41:41.858  INFO 17988 --- [http-nio-9999-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2020-07-06 11:46:13.351  INFO 17988 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-07-06 11:46:22.395  INFO 12888 --- [restartedMain] test.zlogger.com.demo.DemoApplication    : Starting DemoApplication on M-LEWES with PID 12888 (D:\D-JWorkSpace\testZLogger\target\classes started by m.lewes in D:\D-JWorkSpace\testZLogger)
+2020-07-06 11:46:22.407  INFO 12888 --- [restartedMain] test.zlogger.com.demo.DemoApplication    : No active profile set, falling back to default profiles: default
+2020-07-06 11:46:22.517  INFO 12888 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-07-06 11:46:22.517  INFO 12888 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-07-06 11:46:24.239  INFO 12888 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9999 (http)
+2020-07-06 11:46:24.250  INFO 12888 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-06 11:46:24.251  INFO 12888 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-07-06 11:46:24.357  INFO 12888 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-06 11:46:24.357  INFO 12888 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1840 ms
+2020-07-06 11:46:24.619  INFO 12888 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-06 11:46:24.836  INFO 12888 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-06 11:46:24.885  INFO 12888 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9999 (http) with context path ''
+2020-07-06 11:46:24.899  INFO 12888 --- [restartedMain] test.zlogger.com.demo.DemoApplication    : Started DemoApplication in 3.343 seconds (JVM running for 5.475)
+2020-07-06 11:46:28.436  INFO 12888 --- [http-nio-9999-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-06 11:46:28.436  INFO 12888 --- [http-nio-9999-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-06 11:46:28.442  INFO 12888 --- [http-nio-9999-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
