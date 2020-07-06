@@ -1,29 +1,12 @@
-package test.zlogger.com.demo;
+package test.zlogger.com.demo.Model;
 
 public class UserDTO {
 
     String name ;
     String age ;
     String nationality ;
-    Tele myTele ;
+    ChildOne myTele ;
 
-
-
-
-    public Tele getMyTele() {
-        return myTele;
-    }
-
-    public void setMyTele(Tele myTele) {
-        this.myTele = myTele;
-    }
-
-    public UserDTO(String name, String age, String nationality, Tele myTele) {
-        this.name = name;
-        this.age = age;
-        this.nationality = nationality;
-        this.myTele = myTele;
-    }
 
     public String getName() {
         return name;
@@ -47,6 +30,24 @@ public class UserDTO {
 
     public void setNationality(String nationality) {
         this.nationality = nationality;
+    }
+
+    public ChildOne getMyTele() {
+        return myTele;
+    }
+
+    public void setMyTele(ChildOne myTele) {
+        this.myTele = myTele;
+    }
+
+    public UserDTO() {
+    }
+
+    public UserDTO(String name, String age, String nationality, ChildOne myTele) {
+        this.name = name;
+        this.age = age;
+        this.nationality = nationality;
+        this.myTele = myTele;
     }
 }
 

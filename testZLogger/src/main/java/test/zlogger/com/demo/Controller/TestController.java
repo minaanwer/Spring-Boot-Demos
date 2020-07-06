@@ -1,9 +1,11 @@
-package test.zlogger.com.demo;
+package test.zlogger.com.demo.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
+import test.zlogger.com.demo.Model.ChildOne;
+import test.zlogger.com.demo.Model.ChildTwo;
+import test.zlogger.com.demo.Model.UserDTO;
 
 import java.lang.reflect.Field;
-import java.util.Collection;
 import java.util.Dictionary;
 import java.util.Hashtable;
 
@@ -21,13 +23,13 @@ public class TestController {
 
     @GetMapping("propLst")
     public Dictionary GetPropList() throws IllegalAccessException {
-        UserDTO user = new UserDTO("mon","ageData","Ndata",new Tele("we","mob" , new Tele2("tel2","tele2Num")));
+        UserDTO user = new UserDTO("mon","ageData","Ndata",new ChildOne("we","mob" , new ChildTwo("tel2","tele2Num")));
 
         Dictionary keyValuePair = new Hashtable();
         keyValuePair =  getMembers(user, user.getClass(), keyValuePair);
         return keyValuePair;
-    }
 
+    }
 
     public  Dictionary getMembers(Object obj, Class c, Dictionary dict) throws IllegalAccessException {
 
@@ -48,14 +50,17 @@ public class TestController {
         return dict;
     }
 
-
     String  GetValue(Object obj ,Class c , Field f ){
         try {
+            f.setAccessible(true);
             String iWantThis = (String) f.get(obj);
+
             return iWantThis ;
         }
         catch (Exception ex){
             return "Error";
         }
     }
+
+
 }
