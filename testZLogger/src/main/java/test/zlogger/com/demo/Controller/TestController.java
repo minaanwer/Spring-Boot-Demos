@@ -1,6 +1,8 @@
 package test.zlogger.com.demo.Controller;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
+import test.zlogger.com.demo.Log.myLogger;
 import test.zlogger.com.demo.Model.ChildOne;
 import test.zlogger.com.demo.Model.ChildTwo;
 import test.zlogger.com.demo.Model.UserDTO;
@@ -13,12 +15,17 @@ import java.util.Hashtable;
 @RestController
 public class TestController {
 
+    @Autowired
+    myLogger  mylogger ;
+
     public  TestController(){
+
     }
 
     @GetMapping()
     public String  checkStatus(){
-        return  "I'm Ok ";
+        this.mylogger.Log("I'm inside check status");
+        return  "ALL IZZ WEll";
     }
 
 
