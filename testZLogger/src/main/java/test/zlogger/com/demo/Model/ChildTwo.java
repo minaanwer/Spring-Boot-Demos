@@ -2,8 +2,8 @@ package test.zlogger.com.demo.Model;
 
 public class ChildTwo {
 
-    String propThree ;
-    String PropFour;
+    public String propThree ;
+    public String PropFour;
 
     public ChildTwo() {
     }

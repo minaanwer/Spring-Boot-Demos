@@ -9,9 +9,12 @@ import java.lang.reflect.Field;
 import java.util.Dictionary;
 import java.util.Hashtable;
 
+
 @RestController
 public class TestController {
 
+    public  TestController(){
+    }
 
     @GetMapping()
     public String  checkStatus(){
@@ -54,7 +57,6 @@ public class TestController {
         try {
             f.setAccessible(true);
             String iWantThis = (String) f.get(obj);
-
             return iWantThis ;
         }
         catch (Exception ex){

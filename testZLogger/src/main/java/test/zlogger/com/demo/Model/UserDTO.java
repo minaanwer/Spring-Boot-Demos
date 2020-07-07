@@ -2,10 +2,10 @@ package test.zlogger.com.demo.Model;
 
 public class UserDTO {
 
-    String name ;
-    String age ;
-    String nationality ;
-    ChildOne myTele ;
+    public String name ;
+    public String age ;
+    public String nationality ;
+    public ChildOne myTele ;
 
 
     public String getName() {

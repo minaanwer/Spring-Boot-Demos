@@ -2,9 +2,9 @@ package test.zlogger.com.demo.Model;
 
 public class ChildOne {
 
-    String propOne;
-    String propTwo;
-    ChildTwo innerObject;
+   public String propOne;
+    public  String propTwo;
+    public ChildTwo innerObject;
 
     public ChildOne() {
     }
