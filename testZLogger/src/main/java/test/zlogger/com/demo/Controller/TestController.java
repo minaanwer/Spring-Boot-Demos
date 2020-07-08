@@ -6,7 +6,6 @@ import test.zlogger.com.demo.Log.myLogger;
 import test.zlogger.com.demo.Model.ChildOne;
 import test.zlogger.com.demo.Model.ChildTwo;
 import test.zlogger.com.demo.Model.UserDTO;
-
 import java.lang.reflect.Field;
 import java.util.Dictionary;
 import java.util.Hashtable;
@@ -27,8 +26,6 @@ public class TestController {
         this.mylogger.Log("I'm inside check status");
         return  "ALL IZZ WEll";
     }
-
-
 
 
     @GetMapping("propLst")
@@ -70,6 +67,5 @@ public class TestController {
             return "Error";
         }
     }
-
 
 }
