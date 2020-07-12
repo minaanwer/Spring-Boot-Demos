@@ -13,7 +13,7 @@ public class ConfigurationTestController {
 
 @GetMapping("read/value/from/config")
     public String TryToReadValue(){
-        return url.testValue;
+        return url.getTestValue();
     }
 
 

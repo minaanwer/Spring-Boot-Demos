@@ -5,13 +5,21 @@ import org.springframework.context.annotation.PropertySource;
 
 
 
-@PropertySource(value="classpath:URL.properties")
+@PropertySource(ignoreResourceNotFound=true,value="classpath:URL.properties")
 public class URL {
 
 
     @Value("${app.test.value}")
-    public String testValue ;
+    private String testValue ;
 
+    public URL() {
+    }
 
+    public String getTestValue() {
+        return testValue;
+    }
 
+    public void setTestValue(String testValue) {
+        this.testValue = testValue;
+    }
 }
