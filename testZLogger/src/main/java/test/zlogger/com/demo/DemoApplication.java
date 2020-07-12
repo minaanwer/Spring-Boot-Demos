@@ -4,6 +4,7 @@ package test.zlogger.com.demo;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
+import test.zlogger.com.demo.Config.URL;
 import test.zlogger.com.demo.Log.myLogger;
 
 @SpringBootApplication
@@ -16,6 +17,11 @@ public class DemoApplication {
     @Bean
     public myLogger myLogger(){
        return new myLogger();
+    }
+
+    @Bean
+    public URL URL(){
+        return  new URL();
     }
 
 }
