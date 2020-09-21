@@ -10,11 +10,11 @@ import java.time.LocalDate;
 @Getter
 @AllArgsConstructor
 public class SearchCriteria {
+
     String key;
     SearchOperation operation;
-
     Object value;
 
-    LocalDate startDate;
-    LocalDate endDate;
+  //  LocalDate from ;
+ //   LocalDate to;
 }

@@ -6,5 +6,5 @@ public enum SearchOperation {
     LessThan,
     LessThanOrEqual,
     EqualIn,
-    DataBetween
+    DataRange
 }

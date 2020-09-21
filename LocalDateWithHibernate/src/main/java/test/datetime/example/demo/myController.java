@@ -14,9 +14,7 @@ import test.datetime.example.demo.entity.SearchCriteria;
 import test.datetime.example.demo.entity.SearchOperation;
 import test.datetime.example.demo.entity.SpecificationsBuilder;
 
-import java.sql.Date;
 import java.time.LocalDate;
-import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
@@ -39,13 +37,15 @@ public class myController {
     public Page<PayTransaction> SearchBydate() {
 
         List<SearchCriteria> searchCriteria = new ArrayList<>();
-        LocalDate startDate = LocalDate.of(1990,1,1);
+        LocalDate startDate = LocalDate.of(2020,1,3);
         LocalDate endDate = LocalDate.now();
 
-        searchCriteria.add(new SearchCriteria("switchDate", SearchOperation.DataBetween,startDate, startDate,endDate));
+        LocalDate[]myval = {startDate,endDate};
+
+        searchCriteria.add(new SearchCriteria("switchDate", SearchOperation.DataRange,myval));
         Specification<PayTransaction> result = new SpecificationsBuilder<PayTransaction>(searchCriteria).build();
 
-        Pageable pageable = PageRequest.of(0, 2);
+        Pageable pageable = PageRequest.of(0, 20);
         return transactionRepo.findAll(result, pageable);
     }
 
