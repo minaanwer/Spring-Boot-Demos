@@ -4,10 +4,15 @@ import lombok.AllArgsConstructor;
 import org.springframework.data.jpa.domain.Specification;
 import test.datetime.example.demo.entity.SearchCriteria;
 
-import javax.persistence.criteria.CriteriaBuilder;
-import javax.persistence.criteria.CriteriaQuery;
-import javax.persistence.criteria.Predicate;
-import javax.persistence.criteria.Root;
+import javax.persistence.TemporalType;
+import javax.persistence.criteria.*;
+import java.sql.Date;
+import java.text.SimpleDateFormat;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
+
+import java.util.List;
 
 @AllArgsConstructor
 public class SpecificationOf<T> implements Specification<T> {
@@ -30,6 +35,19 @@ public class SpecificationOf<T> implements Specification<T> {
                 return criteriaBuilder.greaterThanOrEqualTo(root.get(criteria.getKey()), criteria.getValue().toString());
             case EqualIn:
                 return criteriaBuilder.in(root.get(criteria.getKey()).in(criteria.getValue()));
+            case DataBetween:
+                {
+
+                    return  criteriaBuilder.between(root.<LocalDate>get("switchDate"),
+                            criteria.getStartDate(),
+                                    criteria.getEndDate()
+                    );
+
+
+
+
+
+                }
             default:
                 return null;
         }

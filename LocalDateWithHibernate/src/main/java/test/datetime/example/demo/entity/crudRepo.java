@@ -5,11 +5,12 @@ import org.springframework.stereotype.Repository;
 
 
 import java.sql.Date;
+import java.time.LocalDate;
 import java.util.Optional;
 
 
 @Repository
 public interface crudRepo extends CrudRepository<PayTransaction,Long> {
 
-    Optional<PayTransaction> findByswitchDate(Date date);
+    Optional<PayTransaction> findByswitchDate(LocalDate date);
 }

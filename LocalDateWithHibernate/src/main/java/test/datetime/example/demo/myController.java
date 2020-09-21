@@ -39,25 +39,20 @@ public class myController {
     public Page<PayTransaction> SearchBydate() {
 
         List<SearchCriteria> searchCriteria = new ArrayList<>();
-        LocalDateTime today = LocalDateTime.now();
+        LocalDate startDate = LocalDate.of(1990,1,1);
+        LocalDate endDate = LocalDate.now();
 
-        searchCriteria.add(new SearchCriteria("txnTimeStamp", SearchOperation.GreaterThanOrEqual, today));
-
+        searchCriteria.add(new SearchCriteria("switchDate", SearchOperation.DataBetween,startDate, startDate,endDate));
         Specification<PayTransaction> result = new SpecificationsBuilder<PayTransaction>(searchCriteria).build();
-        Pageable pageable = PageRequest.of(0, 2);
 
+        Pageable pageable = PageRequest.of(0, 2);
         return transactionRepo.findAll(result, pageable);
     }
 
     @GetMapping(value = "search")
     public Optional<PayTransaction> Search() {
-
-       // List<SearchCriteria> searchCriteria = new ArrayList<>();
-      //  LocalDate today = LocalDate.now();
-
-        Date date = new Date(2012,12,1);
-        return   simpleRepo.findByswitchDate(date);
-
+       LocalDate localDate = LocalDate.now();
+        return   simpleRepo.findByswitchDate(localDate);
     }
 
 
