@@ -1,4 +1,4 @@
-package test.datetime.example.demo.entity;
+package test.datetime.example.demo.helpers;
 
 import lombok.AllArgsConstructor;
 import org.springframework.data.jpa.domain.Specification;

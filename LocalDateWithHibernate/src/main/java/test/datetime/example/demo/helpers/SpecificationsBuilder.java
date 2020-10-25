@@ -1,9 +1,7 @@
-package test.datetime.example.demo.entity;
+package test.datetime.example.demo.helpers;
 
 import lombok.AllArgsConstructor;
 import org.springframework.data.jpa.domain.Specification;
-import test.datetime.example.demo.entity.SearchCriteria;
-import test.datetime.example.demo.entity.SpecificationOf;
 
 import java.util.List;
 import java.util.Objects;

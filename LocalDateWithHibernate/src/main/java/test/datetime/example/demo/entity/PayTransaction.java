@@ -1,6 +1,8 @@
 package test.datetime.example.demo.entity;
 
 import lombok.*;
+import test.datetime.example.demo.helpers.BusinessType;
+import test.datetime.example.demo.helpers.TransactionType;
 
 
 import javax.persistence.*;

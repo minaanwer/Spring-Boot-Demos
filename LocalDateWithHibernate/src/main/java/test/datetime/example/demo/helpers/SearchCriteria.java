@@ -1,10 +1,8 @@
-package test.datetime.example.demo.entity;
+package test.datetime.example.demo.helpers;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
-
-import java.time.LocalDate;
 
 @Setter
 @Getter

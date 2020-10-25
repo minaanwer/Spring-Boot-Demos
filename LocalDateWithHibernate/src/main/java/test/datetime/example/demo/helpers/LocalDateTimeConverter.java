@@ -1,4 +1,4 @@
-package test.datetime.example.demo.entity;
+package test.datetime.example.demo.helpers;
 
 import javax.persistence.AttributeConverter;
 import javax.persistence.Converter;

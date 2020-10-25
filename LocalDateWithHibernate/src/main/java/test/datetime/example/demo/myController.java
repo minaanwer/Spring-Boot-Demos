@@ -10,9 +10,9 @@ import org.springframework.web.bind.annotation.RestController;
 import test.datetime.example.demo.entity.PayTransaction;
 import test.datetime.example.demo.entity.TransactionRepo;
 import test.datetime.example.demo.entity.crudRepo;
-import test.datetime.example.demo.entity.SearchCriteria;
-import test.datetime.example.demo.entity.SearchOperation;
-import test.datetime.example.demo.entity.SpecificationsBuilder;
+import test.datetime.example.demo.helpers.SearchCriteria;
+import test.datetime.example.demo.helpers.SearchOperation;
+import test.datetime.example.demo.helpers.SpecificationsBuilder;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
