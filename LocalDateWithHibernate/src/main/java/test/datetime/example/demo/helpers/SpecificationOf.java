@@ -4,6 +4,8 @@ import lombok.AllArgsConstructor;
 import org.springframework.data.jpa.domain.Specification;
 
 import javax.persistence.criteria.*;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 
@@ -33,9 +35,21 @@ public class SpecificationOf<T> implements Specification<T> {
 
             case Between:
                 ParameterExpression<LocalDateTime> parameter = criteriaBuilder.parameter(LocalDateTime.class);
+
                 Predicate startDatePredicate = criteriaBuilder.greaterThanOrEqualTo(root.get(criteria.getKeys().get(0)), parameter);
                 Predicate endDatePredicate = criteriaBuilder.lessThanOrEqualTo(root.get(criteria.getKeys().get(1)), parameter);
+
                 return criteriaBuilder.and(startDatePredicate, endDatePredicate);
+
+            case myBetween:
+                try {
+                    return  criteriaBuilder.between(root.get("creationDateTime"),(new SimpleDateFormat("yyyy-MM-dd HH:mm").parse("2019-10-25 15:07")),
+                            (new SimpleDateFormat("yyyy-MM-dd HH:mm").parse("2020-10-26 18:07")));
+                } catch (ParseException e) {
+                    //e.printStackTrace();
+                }
+
+
             default:
                 return null;
         }

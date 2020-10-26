@@ -7,5 +7,6 @@ public enum SearchOperation {
     LessThanOrEqual,
     EqualIn,
     DataRange,
-    Between
+    Between,
+    myBetween
 }

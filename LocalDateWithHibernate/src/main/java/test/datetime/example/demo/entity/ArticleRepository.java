@@ -1,13 +1,15 @@
 package test.datetime.example.demo.entity;
 
+import org.springframework.data.jpa.domain.Specification;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 
 import java.util.Date;
 import java.util.List;
 
-public interface ArticleRepository extends JpaRepository<Article, Integer> {
+public interface ArticleRepository extends JpaRepository<Article, Integer>, JpaSpecificationExecutor<Article> {
 
     List<Article> findAllByPublicationDate(Date publicationDate);
 
