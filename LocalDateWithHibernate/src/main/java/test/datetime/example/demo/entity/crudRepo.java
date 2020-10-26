@@ -13,4 +13,5 @@ import java.util.Optional;
 public interface crudRepo extends CrudRepository<PayTransaction,Long> {
 
     Optional<PayTransaction> findByswitchDate(LocalDate date);
+
 }

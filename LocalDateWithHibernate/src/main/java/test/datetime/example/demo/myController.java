@@ -10,11 +10,13 @@ import org.springframework.web.bind.annotation.RestController;
 import test.datetime.example.demo.entity.PayTransaction;
 import test.datetime.example.demo.entity.TransactionRepo;
 import test.datetime.example.demo.entity.crudRepo;
+import test.datetime.example.demo.entity.reportRepo;
 import test.datetime.example.demo.helpers.SearchCriteria;
 import test.datetime.example.demo.helpers.SearchOperation;
 import test.datetime.example.demo.helpers.SpecificationsBuilder;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
@@ -26,6 +28,10 @@ public class myController {
     TransactionRepo transactionRepo;
     @Autowired
     crudRepo simpleRepo;
+
+
+    @Autowired
+    private reportRepo myReportRepo;
 
     @GetMapping("test")
     public String test() {
@@ -55,6 +61,17 @@ public class myController {
         return   simpleRepo.findByswitchDate(localDate);
     }
 
+    @GetMapping(value = "")
+    public List<PayTransaction>SearchByDateTime(){
 
+        ArrayList<SearchCriteria> searchCriteria = new ArrayList<SearchCriteria>();
+
+       // searchCriteria.add(new SearchCriteria("txnTimeStamp", "txnTimeStamp", LocalDateTime.now(),LocalDateTime.now()));
+
+        Specification<PayTransaction> searchSpecification =  new  SpecificationsBuilder<PayTransaction>(searchCriteria).build() ;
+
+       return myReportRepo.findAll(searchSpecification);
+
+    }
 
 }

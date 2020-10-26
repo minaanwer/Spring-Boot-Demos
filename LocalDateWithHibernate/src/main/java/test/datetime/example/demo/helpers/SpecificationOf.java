@@ -5,6 +5,7 @@ import org.springframework.data.jpa.domain.Specification;
 
 import javax.persistence.criteria.*;
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 @AllArgsConstructor
 public class SpecificationOf<T> implements Specification<T> {
@@ -29,6 +30,12 @@ public class SpecificationOf<T> implements Specification<T> {
                 return criteriaBuilder.in(root.get(criteria.getKey()).in(criteria.getValue()));
             case DataRange:
                     return  criteriaBuilder.between(root.get("switchDate"),((LocalDate[])criteria.getValue())[0], ((LocalDate[])criteria.getValue())[1]);
+
+            case Between:
+                ParameterExpression<LocalDateTime> parameter = criteriaBuilder.parameter(LocalDateTime.class);
+                Predicate startDatePredicate = criteriaBuilder.greaterThanOrEqualTo(root.get(criteria.getKeys().get(0)), parameter);
+                Predicate endDatePredicate = criteriaBuilder.lessThanOrEqualTo(root.get(criteria.getKeys().get(1)), parameter);
+                return criteriaBuilder.and(startDatePredicate, endDatePredicate);
             default:
                 return null;
         }
