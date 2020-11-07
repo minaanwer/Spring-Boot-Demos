@@ -25,27 +25,19 @@ public class HomeController {
 
     @GetMapping("/get")
     public  List<String> GetHomePageArray() {
-
-
         List<Long[]> trxs  = entityManager.createNativeQuery(
                 "select (extract(month from creation_date)) as Month_of_year , count (id) as total_ReturnRequests from dbo.return_request rr \n" +
                         "group by Extract (month from creation_date) order by Month_of_year")
                 .getResultList();
-
-
-
         List<String> trxAsString  = FormatTrxAsStringJustToShowThemOnBrowser(trxs);
-
-
-
         return trxAsString ;
     }
 
     private List<String> FormatTrxAsStringJustToShowThemOnBrowser(List<Long[]> trxs) {
         List<String> str = new ArrayList<String>();
-        str.add("Month:Count" + "\r\n");
+        str.add("    Month    :    Count    ");
         for (Object[] item : trxs){
-            str.add(item[0] +":"+item[1] +  "\r\n");
+            str.add("    "+item[0] +"                  :                    "+item[1] );
         }
         return str;
     }
