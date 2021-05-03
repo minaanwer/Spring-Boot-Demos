@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://D:/C-TFSWorkSpace/IPN/Dev/IPN Management Portal/IPN Management Portal.iml" filepath="D:/C-TFSWorkSpace/IPN/Dev/IPN Management Portal/IPN Management Portal.iml" />
+      <module fileurl="file://D:/C-TFSWorkSpace/IPN/Dev/IPN Management Portal/Admin-API/admin-api.iml" filepath="D:/C-TFSWorkSpace/IPN/Dev/IPN Management Portal/Admin-API/admin-api.iml" />
+      <module fileurl="file://D:/C-TFSWorkSpace/IPN/Dev/IPN Management Portal/Portal/portal.iml" filepath="D:/C-TFSWorkSpace/IPN/Dev/IPN Management Portal/Portal/portal.iml" />
+      <module fileurl="file://D:/C-TFSWorkSpace/IPN/Dev/IPN Management Portal/Security-API/security-api.iml" filepath="D:/C-TFSWorkSpace/IPN/Dev/IPN Management Portal/Security-API/security-api.iml" />
+      <module fileurl="file://D:/C-TFSWorkSpace/IPN/Dev/IPN Management Portal/Shared/shared.iml" filepath="D:/C-TFSWorkSpace/IPN/Dev/IPN Management Portal/Shared/shared.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,369 @@
+2021-01-03 15:57:08.512  INFO 5864 --- [main] ebc.securityapi.SecurityApiApplication   : Starting SecurityApiApplication using Java 1.8.0_131 on M-LEWES with PID 5864 (D:\C-TFSWorkSpace\IPN\Dev\IPN Management Portal\Security-API\target\classes started by m.lewes in D:\MyGitHup\Spring-Boot-Demos\ipn-management-portal-root)
+2021-01-03 15:57:08.512  INFO 5864 --- [main] ebc.securityapi.SecurityApiApplication   : No active profile set, falling back to default profiles: default
+2021-01-03 15:57:09.215  INFO 5864 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-01-03 15:57:09.262  INFO 5864 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 41 ms. Found 1 JPA repository interfaces.
+2021-01-03 15:57:09.262  INFO 5864 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-01-03 15:57:09.277  INFO 5864 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14 ms. Found 3 JPA repository interfaces.
+2021-01-03 15:57:10.043  INFO 5864 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2021-01-03 15:57:10.059  INFO 5864 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-03 15:57:10.059  INFO 5864 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-01-03 15:57:10.152  INFO 5864 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
+2021-01-03 15:57:10.152  INFO 5864 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1578 ms
+2021-01-03 15:57:10.746  INFO 5864 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-01-03 15:57:10.887  INFO 5864 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-01-03 15:57:12.481  INFO 5864 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-01-03 15:57:13.090  INFO 5864 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5503c7d, org.springframework.security.web.context.SecurityContextPersistenceFilter@6f112f70, org.springframework.security.web.header.HeaderWriterFilter@3bcc8f13, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@f3876ef, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@61b8c9de, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5b5b53c6, org.springframework.security.web.session.SessionManagementFilter@73d91faf, org.springframework.security.web.access.ExceptionTranslationFilter@7c0e4e4e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1d806de6]
+2021-01-03 15:57:13.200  INFO 5864 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-03 15:57:13.215 DEBUG 5864 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2021-01-03 15:57:13.278 DEBUG 5864 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 7 mappings in 'requestMappingHandlerMapping'
+2021-01-03 15:57:13.309 DEBUG 5864 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2021-01-03 15:57:13.325 DEBUG 5864 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2021-01-03 15:57:13.559  INFO 5864 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-01-03 15:57:13.606  INFO 5864 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path '/api'
+2021-01-03 15:57:13.622  INFO 5864 --- [main] ebc.securityapi.SecurityApiApplication   : Started SecurityApiApplication in 5.918 seconds (JVM running for 8.078)
+2021-01-03 16:04:56.328  INFO 12872 --- [main] ebc.securityapi.SecurityApiApplication   : Starting SecurityApiApplication using Java 1.8.0_131 on M-LEWES with PID 12872 (D:\C-TFSWorkSpace\IPN\Dev\IPN Management Portal\Security-API\target\classes started by m.lewes in D:\MyGitHup\Spring-Boot-Demos\ipn-management-portal-root)
+2021-01-03 16:04:56.344  INFO 12872 --- [main] ebc.securityapi.SecurityApiApplication   : No active profile set, falling back to default profiles: default
+2021-01-03 16:04:57.063  INFO 12872 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-01-03 16:04:57.125  INFO 12872 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 44 ms. Found 1 JPA repository interfaces.
+2021-01-03 16:04:57.125  INFO 12872 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-01-03 16:04:57.125  INFO 12872 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 3 JPA repository interfaces.
+2021-01-03 16:04:57.938  INFO 12872 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2021-01-03 16:04:57.938  INFO 12872 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-03 16:04:57.938  INFO 12872 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-01-03 16:04:58.032  INFO 12872 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
+2021-01-03 16:04:58.032  INFO 12872 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1641 ms
+2021-01-03 16:04:58.672  INFO 12872 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-01-03 16:04:58.797  INFO 12872 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-01-03 16:05:01.501  INFO 12872 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-01-03 16:05:02.204  INFO 12872 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@e706aa, org.springframework.security.web.context.SecurityContextPersistenceFilter@5315266, org.springframework.security.web.header.HeaderWriterFilter@3350ab4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@216328b2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2efcc0b3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@25e6c22a, org.springframework.security.web.session.SessionManagementFilter@646cb2e, org.springframework.security.web.access.ExceptionTranslationFilter@15371de2, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@e4b54d3]
+2021-01-03 16:05:02.345  INFO 12872 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-03 16:05:02.360 DEBUG 12872 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2021-01-03 16:05:02.454 DEBUG 12872 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 7 mappings in 'requestMappingHandlerMapping'
+2021-01-03 16:05:02.470 DEBUG 12872 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2021-01-03 16:05:02.485 DEBUG 12872 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2021-01-03 16:05:02.782  INFO 12872 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-01-03 16:05:02.845  INFO 12872 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path '/api'
+2021-01-03 16:05:02.860  INFO 12872 --- [main] ebc.securityapi.SecurityApiApplication   : Started SecurityApiApplication in 7.14 seconds (JVM running for 9.034)
+2021-01-03 16:06:31.232  INFO 9816 --- [main] ebc.securityapi.SecurityApiApplication   : Starting SecurityApiApplication using Java 1.8.0_131 on M-LEWES with PID 9816 (D:\C-TFSWorkSpace\IPN\Dev\IPN Management Portal\Security-API\target\classes started by m.lewes in D:\MyGitHup\Spring-Boot-Demos\ipn-management-portal-root)
+2021-01-03 16:06:31.248  INFO 9816 --- [main] ebc.securityapi.SecurityApiApplication   : No active profile set, falling back to default profiles: default
+2021-01-03 16:06:32.467  INFO 9816 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-01-03 16:06:32.561  INFO 9816 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 80 ms. Found 1 JPA repository interfaces.
+2021-01-03 16:06:32.561  INFO 9816 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-01-03 16:06:32.576  INFO 9816 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 20 ms. Found 3 JPA repository interfaces.
+2021-01-03 16:06:33.779  INFO 9816 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2021-01-03 16:06:33.795  INFO 9816 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-03 16:06:33.795  INFO 9816 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-01-03 16:06:33.951  INFO 9816 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
+2021-01-03 16:06:33.951  INFO 9816 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2641 ms
+2021-01-03 16:06:34.670  INFO 9816 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-01-03 16:06:34.811  INFO 9816 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-01-03 16:06:37.921  INFO 9816 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-01-03 16:06:38.639  INFO 9816 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@e706aa, org.springframework.security.web.context.SecurityContextPersistenceFilter@5315266, org.springframework.security.web.header.HeaderWriterFilter@3350ab4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@216328b2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2efcc0b3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@25e6c22a, org.springframework.security.web.session.SessionManagementFilter@646cb2e, org.springframework.security.web.access.ExceptionTranslationFilter@15371de2, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@e4b54d3]
+2021-01-03 16:06:38.780  INFO 9816 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-03 16:06:38.780 DEBUG 9816 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2021-01-03 16:06:38.858 DEBUG 9816 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 7 mappings in 'requestMappingHandlerMapping'
+2021-01-03 16:06:38.874 DEBUG 9816 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2021-01-03 16:06:38.889 DEBUG 9816 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2021-01-03 16:06:39.124  INFO 9816 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-01-03 16:06:39.186  INFO 9816 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path '/api'
+2021-01-03 16:06:39.202  INFO 9816 --- [main] ebc.securityapi.SecurityApiApplication   : Started SecurityApiApplication in 8.714 seconds (JVM running for 11.08)
+2021-01-03 17:13:31.789  INFO 6672 --- [main] ebc.securityapi.SecurityApiApplication   : Starting SecurityApiApplication using Java 1.8.0_131 on M-LEWES with PID 6672 (D:\C-TFSWorkSpace\IPN\Dev\IPN Management Portal\Security-API\target\classes started by m.lewes in D:\MyGitHup\Spring-Boot-Demos\ipn-management-portal-root)
+2021-01-03 17:13:31.793  INFO 6672 --- [main] ebc.securityapi.SecurityApiApplication   : No active profile set, falling back to default profiles: default
+2021-01-03 17:13:33.211  INFO 6672 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-01-03 17:13:33.333  INFO 6672 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 105 ms. Found 1 JPA repository interfaces.
+2021-01-03 17:13:33.335  INFO 6672 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-01-03 17:13:33.365  INFO 6672 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 29 ms. Found 3 JPA repository interfaces.
+2021-01-03 17:13:34.969  INFO 6672 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2021-01-03 17:13:34.985  INFO 6672 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-03 17:13:34.986  INFO 6672 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-01-03 17:13:35.206  INFO 6672 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
+2021-01-03 17:13:35.207  INFO 6672 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3321 ms
+2021-01-03 17:13:36.350  INFO 6672 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-01-03 17:13:36.562  INFO 6672 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-01-03 17:13:40.522  INFO 6672 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-01-03 17:13:42.167  INFO 6672 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@67e11bda, org.springframework.security.web.context.SecurityContextPersistenceFilter@35454c7a, org.springframework.security.web.header.HeaderWriterFilter@2e426dd2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@319aa9ee, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5503c7d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@341ccfd1, org.springframework.security.web.session.SessionManagementFilter@67c0c90b, org.springframework.security.web.access.ExceptionTranslationFilter@7d685f4e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6ae42248]
+2021-01-03 17:13:42.337  INFO 6672 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-03 17:13:42.358 DEBUG 6672 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2021-01-03 17:13:42.488 DEBUG 6672 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 7 mappings in 'requestMappingHandlerMapping'
+2021-01-03 17:13:42.524 DEBUG 6672 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2021-01-03 17:13:42.548 DEBUG 6672 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2021-01-03 17:13:42.905  INFO 6672 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-01-03 17:13:42.993  INFO 6672 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path '/api'
+2021-01-03 17:13:43.009  INFO 6672 --- [main] ebc.securityapi.SecurityApiApplication   : Started SecurityApiApplication in 12.527 seconds (JVM running for 15.622)
+2021-01-03 17:53:12.846  INFO 6672 --- [http-nio-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-03 17:53:12.846  INFO 6672 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-01-03 17:53:12.847 DEBUG 6672 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2021-01-03 17:53:12.847 DEBUG 6672 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2021-01-03 17:53:12.847 DEBUG 6672 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2021-01-03 17:53:12.850 DEBUG 6672 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@10cb050
+2021-01-03 17:53:12.850 DEBUG 6672 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@4182a651
+2021-01-03 17:53:12.850 DEBUG 6672 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2021-01-03 17:53:12.850  INFO 6672 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2021-01-03 17:53:12.887 DEBUG 6672 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/api/login", parameters={}
+2021-01-03 17:53:12.895 DEBUG 6672 --- [http-nio-9090-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to ebc.securityapi.controller.AuthenticationController#login(AuthenticationRequestDto)
+2021-01-03 17:53:13.011 DEBUG 6672 --- [http-nio-9090-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/xml;charset=UTF-8" to [ebc.securityapi.dto.request.AuthenticationRequestDto@502ae487]
+2021-01-03 17:53:13.625 DEBUG 6672 --- [http-nio-9090-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json, application/xml;charset=UTF-8, text/xml;charset=UTF-8, application/*+xml;charset=UTF-8, application/xml;charset=UTF-8, text/xml;charset=UTF-8, application/*+xml;charset=UTF-8]
+2021-01-03 17:53:13.625 DEBUG 6672 --- [http-nio-9090-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [ebc.securityapi.dto.response.BaseResponse@243d91f9]
+2021-01-03 17:53:13.752  INFO 6672 --- [http-nio-9090-exec-1] File                                     : 
+<Process action="Login" start="2021-01-03 17:53:13.055" finish="2021-01-03 17:53:13.680" system="Security-API" duration="00:00:00.625" actionId="0" date="2021-01-03">
+  <Event type="INFO" name="UserName" value="admin"/>
+  <Event type="TRACE" name="Authenticate Username and Password"/>
+  <Event type="TRACE" name="Authenticatation failed due to  ebc.securityapi.domain.ResponseCode@7c3f7fb9"/>
+  <Event type="INFO" name="User Id" value="1"/>
+  <Event type="INFO" name="Login Status" value="User must change password"/>
+  <Event type="TRACE" name="Response" value="Code: 09 - Description: User must change password"/>
+</Process>
+
+2021-01-03 17:53:13.767 DEBUG 6672 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2021-01-03 17:53:58.894 DEBUG 6672 --- [http-nio-9090-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/api/login", parameters={}
+2021-01-03 17:53:58.895 DEBUG 6672 --- [http-nio-9090-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to ebc.securityapi.controller.AuthenticationController#login(AuthenticationRequestDto)
+2021-01-03 17:53:58.897 DEBUG 6672 --- [http-nio-9090-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/xml;charset=UTF-8" to [ebc.securityapi.dto.request.AuthenticationRequestDto@41a6c0a5]
+2021-01-03 17:53:59.072 DEBUG 6672 --- [http-nio-9090-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json, application/xml;charset=UTF-8, text/xml;charset=UTF-8, application/*+xml;charset=UTF-8, application/xml;charset=UTF-8, text/xml;charset=UTF-8, application/*+xml;charset=UTF-8]
+2021-01-03 17:53:59.072 DEBUG 6672 --- [http-nio-9090-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [ebc.securityapi.dto.response.BaseResponse@122b4d8d]
+2021-01-03 17:53:59.088  INFO 6672 --- [http-nio-9090-exec-2] File                                     : 
+<Process action="Login" start="2021-01-03 17:53:58.900" finish="2021-01-03 17:53:59.078" system="Security-API" duration="00:00:00.178" actionId="0" date="2021-01-03">
+  <Event type="INFO" name="UserName" value="admin"/>
+  <Event type="TRACE" name="Authenticate Username and Password"/>
+  <Event type="TRACE" name="Authenticatation failed due to  ebc.securityapi.domain.ResponseCode@7c3f7fb9"/>
+  <Event type="INFO" name="User Id" value="1"/>
+  <Event type="INFO" name="Login Status" value="User must change password"/>
+  <Event type="TRACE" name="Response" value="Code: 09 - Description: User must change password"/>
+</Process>
+
+2021-01-03 17:53:59.100 DEBUG 6672 --- [http-nio-9090-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2021-01-03 17:55:00.727 DEBUG 6672 --- [http-nio-9090-exec-3] o.s.web.servlet.DispatcherServlet        : POST "/api/login", parameters={}
+2021-01-03 17:55:00.727 DEBUG 6672 --- [http-nio-9090-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to ebc.securityapi.controller.AuthenticationController#login(AuthenticationRequestDto)
+2021-01-03 17:55:00.727 DEBUG 6672 --- [http-nio-9090-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Read "application/xml;charset=UTF-8" to [ebc.securityapi.dto.request.AuthenticationRequestDto@5e9f2b2b]
+2021-01-03 17:55:00.884 DEBUG 6672 --- [http-nio-9090-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json, application/xml;charset=UTF-8, text/xml;charset=UTF-8, application/*+xml;charset=UTF-8, application/xml;charset=UTF-8, text/xml;charset=UTF-8, application/*+xml;charset=UTF-8]
+2021-01-03 17:55:00.884 DEBUG 6672 --- [http-nio-9090-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [ebc.securityapi.dto.response.BaseResponse@2412b899]
+2021-01-03 17:55:00.898  INFO 6672 --- [http-nio-9090-exec-3] File                                     : 
+<Process action="Login" start="2021-01-03 17:55:00.730" finish="2021-01-03 17:55:00.890" system="Security-API" duration="00:00:00.160" actionId="0" date="2021-01-03">
+  <Event type="INFO" name="UserName" value="admin"/>
+  <Event type="TRACE" name="Authenticate Username and Password"/>
+  <Event type="TRACE" name="Authenticatation failed due to  ebc.securityapi.domain.ResponseCode@7c3f7fb9"/>
+  <Event type="INFO" name="User Id" value="1"/>
+  <Event type="INFO" name="Login Status" value="User must change password"/>
+  <Event type="TRACE" name="Response" value="Code: 09 - Description: User must change password"/>
+</Process>
+
+2021-01-03 17:55:00.907 DEBUG 6672 --- [http-nio-9090-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2021-01-03 17:55:22.197  INFO 13844 --- [main] ebc.securityapi.SecurityApiApplication   : Starting SecurityApiApplication using Java 1.8.0_131 on M-LEWES with PID 13844 (D:\C-TFSWorkSpace\IPN\Dev\IPN Management Portal\Security-API\target\classes started by m.lewes in D:\MyGitHup\Spring-Boot-Demos\ipn-management-portal-root)
+2021-01-03 17:55:22.201  INFO 13844 --- [main] ebc.securityapi.SecurityApiApplication   : No active profile set, falling back to default profiles: default
+2021-01-03 17:55:24.308  INFO 13844 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-01-03 17:55:24.540  INFO 13844 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 169 ms. Found 1 JPA repository interfaces.
+2021-01-03 17:55:24.548  INFO 13844 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-01-03 17:55:24.579  INFO 13844 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 30 ms. Found 3 JPA repository interfaces.
+2021-01-03 17:55:28.124  INFO 13844 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2021-01-03 17:55:28.162  INFO 13844 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-03 17:55:28.167  INFO 13844 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-01-03 17:55:28.462  INFO 13844 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
+2021-01-03 17:55:28.463  INFO 13844 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 6091 ms
+2021-01-03 17:55:37.977  INFO 13844 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-01-03 17:55:38.279  INFO 13844 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-01-03 17:55:45.203  INFO 13844 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-01-03 17:55:47.473  INFO 13844 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@443b6765, org.springframework.security.web.context.SecurityContextPersistenceFilter@3f78a5ed, org.springframework.security.web.header.HeaderWriterFilter@13731ff4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@10b5ff4d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4880a9d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@a72925, org.springframework.security.web.session.SessionManagementFilter@61d24347, org.springframework.security.web.access.ExceptionTranslationFilter@67baa05, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@58fbfefb]
+2021-01-03 17:55:47.928  INFO 13844 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-03 17:55:47.986 DEBUG 13844 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2021-01-03 17:55:48.179 DEBUG 13844 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 7 mappings in 'requestMappingHandlerMapping'
+2021-01-03 17:55:48.242 DEBUG 13844 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2021-01-03 17:55:48.265 DEBUG 13844 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2021-01-03 17:55:49.000  INFO 13844 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-01-03 17:55:49.144  INFO 13844 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path '/api'
+2021-01-03 17:55:49.184  INFO 13844 --- [main] ebc.securityapi.SecurityApiApplication   : Started SecurityApiApplication in 29.087 seconds (JVM running for 34.156)
+2021-01-03 17:57:37.911  INFO 13844 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-01-03 17:57:37.911  INFO 13844 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-01-03 17:57:37.911  INFO 13844 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-01-03 17:57:37.927  INFO 13844 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-01-03 18:53:33.994  INFO 6516 --- [main] ebc.securityapi.SecurityApiApplication   : Starting SecurityApiApplication using Java 1.8.0_131 on M-LEWES with PID 6516 (D:\C-TFSWorkSpace\IPN\Dev\IPN Management Portal\Security-API\target\classes started by m.lewes in D:\MyGitHup\Spring-Boot-Demos\ipn-management-portal-root)
+2021-01-03 18:53:34.010  INFO 6516 --- [main] ebc.securityapi.SecurityApiApplication   : No active profile set, falling back to default profiles: default
+2021-01-03 18:53:36.859  INFO 6516 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-01-03 18:53:36.984  INFO 6516 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 107 ms. Found 1 JPA repository interfaces.
+2021-01-03 18:53:37.000  INFO 6516 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-01-03 18:53:37.015  INFO 6516 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 28 ms. Found 3 JPA repository interfaces.
+2021-01-03 18:53:39.483  INFO 6516 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2021-01-03 18:53:39.499  INFO 6516 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-03 18:53:39.499  INFO 6516 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-01-03 18:53:39.889  INFO 6516 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
+2021-01-03 18:53:39.889  INFO 6516 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5395 ms
+2021-01-03 18:53:42.843  INFO 6516 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-01-03 18:53:43.124  INFO 6516 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-01-03 18:53:48.843  INFO 6516 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-01-03 18:53:53.094  INFO 6516 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@31de8099, org.springframework.security.web.context.SecurityContextPersistenceFilter@e2ee348, org.springframework.security.web.header.HeaderWriterFilter@251e2f4a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1a1f22f2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@573f2e67, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@40d04cf8, org.springframework.security.web.session.SessionManagementFilter@6f5288c5, org.springframework.security.web.access.ExceptionTranslationFilter@445f6f73, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1018f702]
+2021-01-03 18:53:54.828  INFO 6516 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-03 18:53:54.954 DEBUG 6516 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2021-01-03 18:53:55.313 DEBUG 6516 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 7 mappings in 'requestMappingHandlerMapping'
+2021-01-03 18:53:55.375 DEBUG 6516 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2021-01-03 18:53:55.407 DEBUG 6516 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2021-01-03 18:53:55.938  INFO 6516 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-01-03 18:53:56.047  INFO 6516 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path '/api'
+2021-01-03 18:53:56.079  INFO 6516 --- [main] ebc.securityapi.SecurityApiApplication   : Started SecurityApiApplication in 23.891 seconds (JVM running for 29.078)
+2021-01-03 19:00:07.867  INFO 6516 --- [http-nio-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-03 19:00:07.867  INFO 6516 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-01-03 19:00:07.867 DEBUG 6516 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2021-01-03 19:00:07.867 DEBUG 6516 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2021-01-03 19:00:07.867 DEBUG 6516 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2021-01-03 19:00:07.867 DEBUG 6516 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@f348e10
+2021-01-03 19:00:07.867 DEBUG 6516 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@3986b9e9
+2021-01-03 19:00:07.867 DEBUG 6516 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2021-01-03 19:00:07.867  INFO 6516 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2021-01-03 19:00:07.907 DEBUG 6516 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/api/login", parameters={}
+2021-01-03 19:00:07.915 DEBUG 6516 --- [http-nio-9090-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to ebc.securityapi.controller.AuthenticationController#login(AuthenticationRequestDto)
+2021-01-03 19:00:08.011 DEBUG 6516 --- [http-nio-9090-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/xml;charset=UTF-8" to [ebc.securityapi.dto.request.AuthenticationRequestDto@22d1dc1f]
+2021-01-03 19:00:08.571 DEBUG 6516 --- [http-nio-9090-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json, application/xml;charset=UTF-8, text/xml;charset=UTF-8, application/*+xml;charset=UTF-8, application/xml;charset=UTF-8, text/xml;charset=UTF-8, application/*+xml;charset=UTF-8]
+2021-01-03 19:00:08.571 DEBUG 6516 --- [http-nio-9090-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [ebc.securityapi.dto.response.BaseResponse@5f3e551e]
+2021-01-03 19:00:08.675  INFO 6516 --- [http-nio-9090-exec-1] File                                     : 
+<Process action="Login" start="2021-01-03 19:00:08.043" finish="2021-01-03 19:00:08.611" system="Security-API" duration="00:00:00.568" actionId="0" date="2021-01-03">
+  <Event type="INFO" name="UserName" value="admin"/>
+  <Event type="TRACE" name="Authenticate Username and Password"/>
+  <Event type="INFO" name="User Id" value="1"/>
+  <Event type="INFO" name="Login Status" value="Success"/>
+  <Event type="TRACE" name="Response" value="Code: 00 - Description: Success"/>
+</Process>
+
+2021-01-03 19:00:08.691 DEBUG 6516 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2021-01-03 19:31:04.764 DEBUG 6516 --- [http-nio-9090-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/api/login", parameters={}
+2021-01-03 19:31:04.764 DEBUG 6516 --- [http-nio-9090-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to ebc.securityapi.controller.AuthenticationController#login(AuthenticationRequestDto)
+2021-01-03 19:31:04.767 DEBUG 6516 --- [http-nio-9090-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/xml;charset=UTF-8" to [ebc.securityapi.dto.request.AuthenticationRequestDto@1296a20d]
+2021-01-03 19:31:04.944 DEBUG 6516 --- [http-nio-9090-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json, application/xml;charset=UTF-8, text/xml;charset=UTF-8, application/*+xml;charset=UTF-8, application/xml;charset=UTF-8, text/xml;charset=UTF-8, application/*+xml;charset=UTF-8]
+2021-01-03 19:31:04.944 DEBUG 6516 --- [http-nio-9090-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [ebc.securityapi.dto.response.BaseResponse@3b9452ba]
+2021-01-03 19:31:04.957  INFO 6516 --- [http-nio-9090-exec-2] File                                     : 
+<Process action="Login" start="2021-01-03 19:31:04.770" finish="2021-01-03 19:31:04.947" system="Security-API" duration="00:00:00.177" actionId="0" date="2021-01-03">
+  <Event type="INFO" name="UserName" value="admin"/>
+  <Event type="TRACE" name="Authenticate Username and Password"/>
+  <Event type="INFO" name="User Id" value="1"/>
+  <Event type="INFO" name="Login Status" value="Success"/>
+  <Event type="TRACE" name="Response" value="Code: 00 - Description: Success"/>
+</Process>
+
+2021-01-03 19:31:04.967 DEBUG 6516 --- [http-nio-9090-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2021-01-03 19:31:36.753 DEBUG 6516 --- [http-nio-9090-exec-3] o.s.web.servlet.DispatcherServlet        : POST "/api/login", parameters={}
+2021-01-03 19:31:36.754 DEBUG 6516 --- [http-nio-9090-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to ebc.securityapi.controller.AuthenticationController#login(AuthenticationRequestDto)
+2021-01-03 19:31:36.755 DEBUG 6516 --- [http-nio-9090-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Read "application/xml;charset=UTF-8" to [ebc.securityapi.dto.request.AuthenticationRequestDto@706a8bf3]
+2021-01-03 19:31:36.936 DEBUG 6516 --- [http-nio-9090-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json, application/xml;charset=UTF-8, text/xml;charset=UTF-8, application/*+xml;charset=UTF-8, application/xml;charset=UTF-8, text/xml;charset=UTF-8, application/*+xml;charset=UTF-8]
+2021-01-03 19:31:36.936 DEBUG 6516 --- [http-nio-9090-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [ebc.securityapi.dto.response.BaseResponse@5ca2b47d]
+2021-01-03 19:31:36.952  INFO 6516 --- [http-nio-9090-exec-3] File                                     : 
+<Process action="Login" start="2021-01-03 19:31:36.760" finish="2021-01-03 19:31:36.939" system="Security-API" duration="00:00:00.179" actionId="0" date="2021-01-03">
+  <Event type="INFO" name="UserName" value="admin"/>
+  <Event type="TRACE" name="Authenticate Username and Password"/>
+  <Event type="INFO" name="User Id" value="1"/>
+  <Event type="INFO" name="Login Status" value="Success"/>
+  <Event type="TRACE" name="Response" value="Code: 00 - Description: Success"/>
+</Process>
+
+2021-01-03 19:31:36.962 DEBUG 6516 --- [http-nio-9090-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2021-01-03 19:33:17.218 DEBUG 6516 --- [http-nio-9090-exec-4] o.s.web.servlet.DispatcherServlet        : POST "/api/login", parameters={}
+2021-01-03 19:33:17.219 DEBUG 6516 --- [http-nio-9090-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to ebc.securityapi.controller.AuthenticationController#login(AuthenticationRequestDto)
+2021-01-03 19:33:17.223 DEBUG 6516 --- [http-nio-9090-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Read "application/xml;charset=UTF-8" to [ebc.securityapi.dto.request.AuthenticationRequestDto@3aa3ab27]
+2021-01-03 19:33:17.383 DEBUG 6516 --- [http-nio-9090-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json, application/xml;charset=UTF-8, text/xml;charset=UTF-8, application/*+xml;charset=UTF-8, application/xml;charset=UTF-8, text/xml;charset=UTF-8, application/*+xml;charset=UTF-8]
+2021-01-03 19:33:17.383 DEBUG 6516 --- [http-nio-9090-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [ebc.securityapi.dto.response.BaseResponse@797cb051]
+2021-01-03 19:33:17.395  INFO 6516 --- [http-nio-9090-exec-4] File                                     : 
+<Process action="Login" start="2021-01-03 19:33:17.227" finish="2021-01-03 19:33:17.385" system="Security-API" duration="00:00:00.158" actionId="0" date="2021-01-03">
+  <Event type="INFO" name="UserName" value="admin"/>
+  <Event type="TRACE" name="Authenticate Username and Password"/>
+  <Event type="TRACE" name="Authenticatation failed due to  ebc.securityapi.domain.ResponseCode@46a3d860"/>
+  <Event type="INFO" name="User Id" value="1"/>
+  <Event type="INFO" name="Login Status" value="User must change password"/>
+  <Event type="TRACE" name="Response" value="Code: 09 - Description: User must change password"/>
+</Process>
+
+2021-01-03 19:33:17.407 DEBUG 6516 --- [http-nio-9090-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2021-01-03 19:34:22.514 DEBUG 6516 --- [http-nio-9090-exec-5] o.s.web.servlet.DispatcherServlet        : POST "/api/login", parameters={}
+2021-01-03 19:34:22.514 DEBUG 6516 --- [http-nio-9090-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to ebc.securityapi.controller.AuthenticationController#login(AuthenticationRequestDto)
+2021-01-03 19:34:22.516 DEBUG 6516 --- [http-nio-9090-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Read "application/xml;charset=UTF-8" to [ebc.securityapi.dto.request.AuthenticationRequestDto@14f50954]
+2021-01-03 19:34:22.690 DEBUG 6516 --- [http-nio-9090-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json, application/xml;charset=UTF-8, text/xml;charset=UTF-8, application/*+xml;charset=UTF-8, application/xml;charset=UTF-8, text/xml;charset=UTF-8, application/*+xml;charset=UTF-8]
+2021-01-03 19:34:22.690 DEBUG 6516 --- [http-nio-9090-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [ebc.securityapi.dto.response.BaseResponse@7c53b02a]
+2021-01-03 19:34:22.703  INFO 6516 --- [http-nio-9090-exec-5] File                                     : 
+<Process action="Login" start="2021-01-03 19:34:22.518" finish="2021-01-03 19:34:22.695" system="Security-API" duration="00:00:00.177" actionId="0" date="2021-01-03">
+  <Event type="INFO" name="UserName" value="admin"/>
+  <Event type="TRACE" name="Authenticate Username and Password"/>
+  <Event type="TRACE" name="Authenticatation failed due to  ebc.securityapi.domain.ResponseCode@46a3d860"/>
+  <Event type="INFO" name="User Id" value="1"/>
+  <Event type="INFO" name="Login Status" value="User must change password"/>
+  <Event type="TRACE" name="Response" value="Code: 09 - Description: User must change password"/>
+</Process>
+
+2021-01-03 19:34:22.715 DEBUG 6516 --- [http-nio-9090-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2021-01-03 19:35:25.538 DEBUG 6516 --- [http-nio-9090-exec-6] o.s.web.servlet.DispatcherServlet        : POST "/api/login", parameters={}
+2021-01-03 19:35:25.538 DEBUG 6516 --- [http-nio-9090-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to ebc.securityapi.controller.AuthenticationController#login(AuthenticationRequestDto)
+2021-01-03 19:35:25.539 DEBUG 6516 --- [http-nio-9090-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Read "application/xml;charset=UTF-8" to [ebc.securityapi.dto.request.AuthenticationRequestDto@ecf87d9]
+2021-01-03 19:35:25.689 DEBUG 6516 --- [http-nio-9090-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json, application/xml;charset=UTF-8, text/xml;charset=UTF-8, application/*+xml;charset=UTF-8, application/xml;charset=UTF-8, text/xml;charset=UTF-8, application/*+xml;charset=UTF-8]
+2021-01-03 19:35:25.689 DEBUG 6516 --- [http-nio-9090-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [ebc.securityapi.dto.response.BaseResponse@722ff32b]
+2021-01-03 19:35:25.698  INFO 6516 --- [http-nio-9090-exec-6] File                                     : 
+<Process action="Login" start="2021-01-03 19:35:25.541" finish="2021-01-03 19:35:25.691" system="Security-API" duration="00:00:00.150" actionId="0" date="2021-01-03">
+  <Event type="INFO" name="UserName" value="admin"/>
+  <Event type="TRACE" name="Authenticate Username and Password"/>
+  <Event type="TRACE" name="Authenticatation failed due to  ebc.securityapi.domain.ResponseCode@46a3d860"/>
+  <Event type="INFO" name="User Id" value="1"/>
+  <Event type="INFO" name="Login Status" value="User must change password"/>
+  <Event type="TRACE" name="Response" value="Code: 09 - Description: User must change password"/>
+</Process>
+
+2021-01-03 19:35:25.704 DEBUG 6516 --- [http-nio-9090-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2021-01-03 19:47:00.980 DEBUG 6516 --- [http-nio-9090-exec-7] o.s.web.servlet.DispatcherServlet        : POST "/api/login", parameters={}
+2021-01-03 19:47:00.980 DEBUG 6516 --- [http-nio-9090-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to ebc.securityapi.controller.AuthenticationController#login(AuthenticationRequestDto)
+2021-01-03 19:47:00.980 DEBUG 6516 --- [http-nio-9090-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Read "application/xml;charset=UTF-8" to [ebc.securityapi.dto.request.AuthenticationRequestDto@c8190ec]
+2021-01-03 19:47:01.132 DEBUG 6516 --- [http-nio-9090-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json, application/xml;charset=UTF-8, text/xml;charset=UTF-8, application/*+xml;charset=UTF-8, application/xml;charset=UTF-8, text/xml;charset=UTF-8, application/*+xml;charset=UTF-8]
+2021-01-03 19:47:01.132 DEBUG 6516 --- [http-nio-9090-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [ebc.securityapi.dto.response.BaseResponse@5625c8b7]
+2021-01-03 19:47:01.140  INFO 6516 --- [http-nio-9090-exec-7] File                                     : 
+<Process action="Login" start="2021-01-03 19:47:00.988" finish="2021-01-03 19:47:01.132" system="Security-API" duration="00:00:00.144" actionId="0" date="2021-01-03">
+  <Event type="INFO" name="UserName" value="admin"/>
+  <Event type="TRACE" name="Authenticate Username and Password"/>
+  <Event type="TRACE" name="Authenticatation failed due to  ebc.securityapi.domain.ResponseCode@46a3d860"/>
+  <Event type="INFO" name="User Id" value="1"/>
+  <Event type="INFO" name="Login Status" value="User must change password"/>
+  <Event type="TRACE" name="Response" value="Code: 09 - Description: User must change password"/>
+</Process>
+
+2021-01-03 19:47:01.148 DEBUG 6516 --- [http-nio-9090-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2021-01-03 19:47:08.019 DEBUG 6516 --- [http-nio-9090-exec-8] o.s.web.servlet.DispatcherServlet        : POST "/api/login", parameters={}
+2021-01-03 19:47:08.019 DEBUG 6516 --- [http-nio-9090-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to ebc.securityapi.controller.AuthenticationController#login(AuthenticationRequestDto)
+2021-01-03 19:47:08.019 DEBUG 6516 --- [http-nio-9090-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Read "application/xml;charset=UTF-8" to [ebc.securityapi.dto.request.AuthenticationRequestDto@37ba87d6]
+2021-01-03 19:47:08.171 DEBUG 6516 --- [http-nio-9090-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json, application/xml;charset=UTF-8, text/xml;charset=UTF-8, application/*+xml;charset=UTF-8, application/xml;charset=UTF-8, text/xml;charset=UTF-8, application/*+xml;charset=UTF-8]
+2021-01-03 19:47:08.171 DEBUG 6516 --- [http-nio-9090-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [ebc.securityapi.dto.response.BaseResponse@1eec96a9]
+2021-01-03 19:47:08.179  INFO 6516 --- [http-nio-9090-exec-8] File                                     : 
+<Process action="Login" start="2021-01-03 19:47:08.027" finish="2021-01-03 19:47:08.171" system="Security-API" duration="00:00:00.144" actionId="0" date="2021-01-03">
+  <Event type="INFO" name="UserName" value="admin"/>
+  <Event type="TRACE" name="Authenticate Username and Password"/>
+  <Event type="TRACE" name="Authenticatation failed due to  ebc.securityapi.domain.ResponseCode@46a3d860"/>
+  <Event type="INFO" name="User Id" value="1"/>
+  <Event type="INFO" name="Login Status" value="User must change password"/>
+  <Event type="TRACE" name="Response" value="Code: 09 - Description: User must change password"/>
+</Process>
+
+2021-01-03 19:47:08.187 DEBUG 6516 --- [http-nio-9090-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2021-01-03 19:48:06.157 DEBUG 6516 --- [http-nio-9090-exec-9] o.s.web.servlet.DispatcherServlet        : POST "/api/login", parameters={}
+2021-01-03 19:48:06.157 DEBUG 6516 --- [http-nio-9090-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to ebc.securityapi.controller.AuthenticationController#login(AuthenticationRequestDto)
+2021-01-03 19:48:06.157 DEBUG 6516 --- [http-nio-9090-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Read "application/xml;charset=UTF-8" to [ebc.securityapi.dto.request.AuthenticationRequestDto@22a8b4da]
+2021-01-03 19:48:06.317 DEBUG 6516 --- [http-nio-9090-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json, application/xml;charset=UTF-8, text/xml;charset=UTF-8, application/*+xml;charset=UTF-8, application/xml;charset=UTF-8, text/xml;charset=UTF-8, application/*+xml;charset=UTF-8]
+2021-01-03 19:48:06.317 DEBUG 6516 --- [http-nio-9090-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [ebc.securityapi.dto.response.BaseResponse@8361221]
+2021-01-03 19:48:06.325  INFO 6516 --- [http-nio-9090-exec-9] File                                     : 
+<Process action="Login" start="2021-01-03 19:48:06.157" finish="2021-01-03 19:48:06.317" system="Security-API" duration="00:00:00.160" actionId="0" date="2021-01-03">
+  <Event type="INFO" name="UserName" value="admin"/>
+  <Event type="TRACE" name="Authenticate Username and Password"/>
+  <Event type="TRACE" name="Authenticatation failed due to  ebc.securityapi.domain.ResponseCode@46a3d860"/>
+  <Event type="INFO" name="User Id" value="1"/>
+  <Event type="INFO" name="Login Status" value="User must change password"/>
+  <Event type="TRACE" name="Response" value="Code: 09 - Description: User must change password"/>
+</Process>
+
+2021-01-03 19:48:06.325 DEBUG 6516 --- [http-nio-9090-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2021-01-03 19:50:54.555 DEBUG 6516 --- [http-nio-9090-exec-10] o.s.web.servlet.DispatcherServlet        : POST "/api/login", parameters={}
+2021-01-03 19:50:54.555 DEBUG 6516 --- [http-nio-9090-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to ebc.securityapi.controller.AuthenticationController#login(AuthenticationRequestDto)
+2021-01-03 19:50:54.555 DEBUG 6516 --- [http-nio-9090-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Read "application/xml;charset=UTF-8" to [ebc.securityapi.dto.request.AuthenticationRequestDto@1cece874]
+2021-01-03 19:50:54.715 DEBUG 6516 --- [http-nio-9090-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json, application/xml;charset=UTF-8, text/xml;charset=UTF-8, application/*+xml;charset=UTF-8, application/xml;charset=UTF-8, text/xml;charset=UTF-8, application/*+xml;charset=UTF-8]
+2021-01-03 19:50:54.715 DEBUG 6516 --- [http-nio-9090-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [ebc.securityapi.dto.response.BaseResponse@18d2042d]
+2021-01-03 19:50:54.723  INFO 6516 --- [http-nio-9090-exec-10] File                                     : 
+<Process action="Login" start="2021-01-03 19:50:54.563" finish="2021-01-03 19:50:54.715" system="Security-API" duration="00:00:00.152" actionId="0" date="2021-01-03">
+  <Event type="INFO" name="UserName" value="admin"/>
+  <Event type="TRACE" name="Authenticate Username and Password"/>
+  <Event type="TRACE" name="Authenticatation failed due to  ebc.securityapi.domain.ResponseCode@46a3d860"/>
+  <Event type="INFO" name="User Id" value="1"/>
+  <Event type="INFO" name="Login Status" value="User must change password"/>
+  <Event type="TRACE" name="Response" value="Code: 09 - Description: User must change password"/>
+</Process>
+
+2021-01-03 19:50:54.731 DEBUG 6516 --- [http-nio-9090-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2021-01-03 20:32:01.493  INFO 6516 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-01-03 20:32:01.493  INFO 6516 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-01-03 20:32:01.508  INFO 6516 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-01-03 20:32:01.524  INFO 6516 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

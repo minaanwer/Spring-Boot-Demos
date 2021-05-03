@@ -1,0 +1,296 @@
+2021-01-03 16:02:50.986  INFO 13944 --- [main] ebc.adminapi.AdminApiApplication         : Starting AdminApiApplication using Java 1.8.0_131 on M-LEWES with PID 13944 (D:\C-TFSWorkSpace\IPN\Dev\IPN Management Portal\Admin-API\target\classes started by m.lewes in D:\MyGitHup\Spring-Boot-Demos\ipn-management-portal-root)
+2021-01-03 16:02:50.986  INFO 13944 --- [main] ebc.adminapi.AdminApiApplication         : No active profile set, falling back to default profiles: default
+2021-01-03 16:02:51.721  INFO 13944 --- [main] o.s.c.a.ConfigurationClassParser         : Properties location [classpath:url.properties] not resolvable: class path resource [url.properties] cannot be opened because it does not exist
+2021-01-03 16:02:52.189  INFO 13944 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-01-03 16:02:52.236  INFO 13944 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 43 ms. Found 1 JPA repository interfaces.
+2021-01-03 16:02:52.236  INFO 13944 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-01-03 16:02:52.267  INFO 13944 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 35 ms. Found 11 JPA repository interfaces.
+2021-01-03 16:02:53.096  INFO 13944 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9091 (http)
+2021-01-03 16:02:53.096  INFO 13944 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-03 16:02:53.096  INFO 13944 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-01-03 16:02:53.205  INFO 13944 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-01-03 16:02:53.205  INFO 13944 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2141 ms
+2021-01-03 16:02:53.471  INFO 13944 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-01-03 16:02:53.564  INFO 13944 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.25.Final
+2021-01-03 16:02:53.783  INFO 13944 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-01-03 16:02:53.877  INFO 13944 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-01-03 16:02:54.033  INFO 13944 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-01-03 16:02:54.033  INFO 13944 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2021-01-03 16:02:55.877  WARN 13944 --- [main] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "
+    create table dbo."BackOfficeConfiguration" (
+       "Id" int4 not null,
+        "Parameter" varchar(100),
+        "Value" varchar(1000),
+        primary key ("Id")
+    )" via JDBC Statement
+
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "
+    create table dbo."BackOfficeConfiguration" (
+       "Id" int4 not null,
+        "Parameter" varchar(100),
+        "Value" varchar(1000),
+        primary key ("Id")
+    )" via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlString(AbstractSchemaMigrator.java:559)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlStrings(AbstractSchemaMigrator.java:504)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.createTable(AbstractSchemaMigrator.java:277)
+	at org.hibernate.tool.schema.internal.GroupedSchemaMigratorImpl.performTablesMigration(GroupedSchemaMigratorImpl.java:71)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:207)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:114)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:184)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:73)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:316)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:469)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1259)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1847)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1784)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:609)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1159)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:913)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:588)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:767)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1309)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1298)
+	at ebc.adminapi.AdminApiApplication.main(AdminApiApplication.java:20)
+Caused by: org.postgresql.util.PSQLException: ERROR: schema "dbo" does not exist
+  Position: 20
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2553)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2285)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:323)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:473)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:393)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:322)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:308)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:284)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:279)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:95)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54)
+	... 35 common frames omitted
+
+2021-01-03 16:02:56.784  WARN 13944 --- [main] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "
+    alter table if exists admin."UserPrivilegeRequest" 
+       add constraint "FK_UserPrvgsRequest_User" 
+       foreign key ("UserId") 
+       references admin."User"" via JDBC Statement
+
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "
+    alter table if exists admin."UserPrivilegeRequest" 
+       add constraint "FK_UserPrvgsRequest_User" 
+       foreign key ("UserId") 
+       references admin."User"" via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlString(AbstractSchemaMigrator.java:559)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlStrings(AbstractSchemaMigrator.java:504)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applyForeignKeys(AbstractSchemaMigrator.java:433)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:249)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:114)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:184)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:73)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:316)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:469)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1259)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1847)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1784)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:609)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1159)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:913)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:588)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:767)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1309)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1298)
+	at ebc.adminapi.AdminApiApplication.main(AdminApiApplication.java:20)
+Caused by: org.postgresql.util.PSQLException: ERROR: constraint "FK_UserPrvgsRequest_User" for relation "UserPrivilegeRequest" already exists
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2553)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2285)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:323)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:473)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:393)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:322)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:308)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:284)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:279)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:95)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54)
+	... 34 common frames omitted
+
+2021-01-03 16:02:56.846  INFO 13944 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-01-03 16:02:56.862  INFO 13944 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-01-03 16:02:58.443  INFO 13944 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: ae4ecbcd-1c2a-4587-8eef-48f0bd67f24d
+
+2021-01-03 16:02:58.537  INFO 13944 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@15ad5acb, org.springframework.security.web.context.SecurityContextPersistenceFilter@57515944, org.springframework.security.web.header.HeaderWriterFilter@1124dd79, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2fa47368, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1d8dbf10, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@59c862af, org.springframework.security.web.session.SessionManagementFilter@1ea96ff2, org.springframework.security.web.access.ExceptionTranslationFilter@4b22214d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@33f2eb04]
+2021-01-03 16:02:58.740  INFO 13944 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9091 (http) with context path ''
+2021-01-03 16:02:58.756  INFO 13944 --- [main] ebc.adminapi.AdminApiApplication         : Started AdminApiApplication in 8.606 seconds (JVM running for 10.842)
+2021-01-03 16:04:42.476  INFO 4368 --- [main] ebc.adminapi.AdminApiApplication         : Starting AdminApiApplication using Java 1.8.0_131 on M-LEWES with PID 4368 (D:\C-TFSWorkSpace\IPN\Dev\IPN Management Portal\Admin-API\target\classes started by m.lewes in D:\MyGitHup\Spring-Boot-Demos\ipn-management-portal-root)
+2021-01-03 16:04:42.476  INFO 4368 --- [main] ebc.adminapi.AdminApiApplication         : No active profile set, falling back to default profiles: default
+2021-01-03 16:04:42.898  INFO 4368 --- [main] o.s.c.a.ConfigurationClassParser         : Properties location [classpath:url.properties] not resolvable: class path resource [url.properties] cannot be opened because it does not exist
+2021-01-03 16:04:43.336  INFO 4368 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-01-03 16:04:43.383  INFO 4368 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 48 ms. Found 1 JPA repository interfaces.
+2021-01-03 16:04:43.383  INFO 4368 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-01-03 16:04:43.430  INFO 4368 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 36 ms. Found 11 JPA repository interfaces.
+2021-01-03 16:04:44.070  INFO 4368 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9091 (http)
+2021-01-03 16:04:44.086  INFO 4368 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-03 16:04:44.086  INFO 4368 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-01-03 16:04:44.226  INFO 4368 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-01-03 16:04:44.226  INFO 4368 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1703 ms
+2021-01-03 16:04:44.523  INFO 4368 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-01-03 16:04:44.570  INFO 4368 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.25.Final
+2021-01-03 16:04:44.789  INFO 4368 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-01-03 16:04:44.898  INFO 4368 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-01-03 16:04:45.070  INFO 4368 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-01-03 16:04:45.086  INFO 4368 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2021-01-03 16:04:47.977  INFO 4368 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-01-03 16:04:47.993  INFO 4368 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-01-03 16:04:49.040  INFO 4368 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 37dad3e2-77a9-4cf6-905f-0bfb5790c354
+
+2021-01-03 16:04:49.118  INFO 4368 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@148fca83, org.springframework.security.web.context.SecurityContextPersistenceFilter@534fc1f7, org.springframework.security.web.header.HeaderWriterFilter@2cff03cf, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@72ec16f8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@24d7657b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2d2a8819, org.springframework.security.web.session.SessionManagementFilter@19e2db7c, org.springframework.security.web.access.ExceptionTranslationFilter@2d7aa291, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4552f905]
+2021-01-03 16:04:49.305  INFO 4368 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9091 (http) with context path ''
+2021-01-03 16:04:49.321  INFO 4368 --- [main] ebc.adminapi.AdminApiApplication         : Started AdminApiApplication in 7.479 seconds (JVM running for 9.617)
+2021-01-03 16:06:27.252  INFO 12964 --- [main] ebc.adminapi.AdminApiApplication         : Starting AdminApiApplication using Java 1.8.0_131 on M-LEWES with PID 12964 (D:\C-TFSWorkSpace\IPN\Dev\IPN Management Portal\Admin-API\target\classes started by m.lewes in D:\MyGitHup\Spring-Boot-Demos\ipn-management-portal-root)
+2021-01-03 16:06:27.252  INFO 12964 --- [main] ebc.adminapi.AdminApiApplication         : No active profile set, falling back to default profiles: default
+2021-01-03 16:06:27.830  INFO 12964 --- [main] o.s.c.a.ConfigurationClassParser         : Properties location [classpath:url.properties] not resolvable: class path resource [url.properties] cannot be opened because it does not exist
+2021-01-03 16:06:28.435  INFO 12964 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-01-03 16:06:28.513  INFO 12964 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 78 ms. Found 1 JPA repository interfaces.
+2021-01-03 16:06:28.529  INFO 12964 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-01-03 16:06:28.576  INFO 12964 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 56 ms. Found 11 JPA repository interfaces.
+2021-01-03 16:06:30.060  INFO 12964 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9091 (http)
+2021-01-03 16:06:30.076  INFO 12964 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-03 16:06:30.076  INFO 12964 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-01-03 16:06:30.467  INFO 12964 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-01-03 16:06:30.467  INFO 12964 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3137 ms
+2021-01-03 16:06:30.935  INFO 12964 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-01-03 16:06:31.029  INFO 12964 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.25.Final
+2021-01-03 16:06:31.326  INFO 12964 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-01-03 16:06:31.482  INFO 12964 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-01-03 16:06:31.685  INFO 12964 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-01-03 16:06:31.717  INFO 12964 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2021-01-03 16:06:35.686  INFO 12964 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-01-03 16:06:35.702  INFO 12964 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-01-03 16:06:37.436  INFO 12964 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 57a84d6c-a513-4c64-8d40-60b2e4de37a7
+
+2021-01-03 16:06:37.546  INFO 12964 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@50b38342, org.springframework.security.web.context.SecurityContextPersistenceFilter@335cdd2, org.springframework.security.web.header.HeaderWriterFilter@498b611e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@60a99f3d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@785d6a98, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@424a152f, org.springframework.security.web.session.SessionManagementFilter@4b56b517, org.springframework.security.web.access.ExceptionTranslationFilter@4c79ca55, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@52d59507]
+2021-01-03 16:06:37.796  INFO 12964 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9091 (http) with context path ''
+2021-01-03 16:06:37.796  INFO 12964 --- [main] ebc.adminapi.AdminApiApplication         : Started AdminApiApplication in 11.299 seconds (JVM running for 13.195)
+2021-01-03 17:11:44.279  INFO 7268 --- [main] ebc.adminapi.AdminApiApplication         : Starting AdminApiApplication using Java 1.8.0_131 on M-LEWES with PID 7268 (D:\C-TFSWorkSpace\IPN\Dev\IPN Management Portal\Admin-API\target\classes started by m.lewes in D:\MyGitHup\Spring-Boot-Demos\ipn-management-portal-root)
+2021-01-03 17:11:44.286  INFO 7268 --- [main] ebc.adminapi.AdminApiApplication         : No active profile set, falling back to default profiles: default
+2021-01-03 17:11:45.395  INFO 7268 --- [main] o.s.c.a.ConfigurationClassParser         : Properties location [classpath:url.properties] not resolvable: class path resource [url.properties] cannot be opened because it does not exist
+2021-01-03 17:11:46.312  INFO 7268 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-01-03 17:11:46.408  INFO 7268 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 85 ms. Found 1 JPA repository interfaces.
+2021-01-03 17:11:46.410  INFO 7268 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-01-03 17:11:46.477  INFO 7268 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 66 ms. Found 11 JPA repository interfaces.
+2021-01-03 17:11:47.644  INFO 7268 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9091 (http)
+2021-01-03 17:11:47.655  INFO 7268 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-03 17:11:47.656  INFO 7268 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-01-03 17:11:47.819  INFO 7268 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-01-03 17:11:47.820  INFO 7268 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3437 ms
+2021-01-03 17:11:48.130  INFO 7268 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-01-03 17:11:48.221  INFO 7268 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.25.Final
+2021-01-03 17:11:48.576  INFO 7268 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-01-03 17:11:48.747  INFO 7268 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-01-03 17:11:48.932  INFO 7268 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-01-03 17:11:48.944  INFO 7268 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2021-01-03 17:11:55.342  INFO 7268 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-01-03 17:11:55.359  INFO 7268 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-01-03 17:11:57.099  INFO 7268 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 9a16b87d-779f-485b-af59-736f45d4c367
+
+2021-01-03 17:11:57.232  INFO 7268 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@72e49f6a, org.springframework.security.web.context.SecurityContextPersistenceFilter@51df2a41, org.springframework.security.web.header.HeaderWriterFilter@3749c2b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7c0b0bd9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@22002459, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2e4b5da1, org.springframework.security.web.session.SessionManagementFilter@64d93096, org.springframework.security.web.access.ExceptionTranslationFilter@54f25b42, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@27dc81be]
+2021-01-03 17:11:57.513  INFO 7268 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9091 (http) with context path ''
+2021-01-03 17:11:57.530  INFO 7268 --- [main] ebc.adminapi.AdminApiApplication         : Started AdminApiApplication in 14.948 seconds (JVM running for 18.336)
+2021-01-03 17:55:13.891  INFO 18024 --- [main] ebc.adminapi.AdminApiApplication         : Starting AdminApiApplication using Java 1.8.0_131 on M-LEWES with PID 18024 (D:\C-TFSWorkSpace\IPN\Dev\IPN Management Portal\Admin-API\target\classes started by m.lewes in D:\MyGitHup\Spring-Boot-Demos\ipn-management-portal-root)
+2021-01-03 17:55:13.894  INFO 18024 --- [main] ebc.adminapi.AdminApiApplication         : No active profile set, falling back to default profiles: default
+2021-01-03 17:55:15.086  INFO 18024 --- [main] o.s.c.a.ConfigurationClassParser         : Properties location [classpath:url.properties] not resolvable: class path resource [url.properties] cannot be opened because it does not exist
+2021-01-03 17:55:16.441  INFO 18024 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-01-03 17:55:16.681  INFO 18024 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 211 ms. Found 1 JPA repository interfaces.
+2021-01-03 17:55:16.690  INFO 18024 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-01-03 17:55:16.845  INFO 18024 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 155 ms. Found 11 JPA repository interfaces.
+2021-01-03 17:55:20.168  INFO 18024 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9091 (http)
+2021-01-03 17:55:20.216  INFO 18024 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-03 17:55:20.217  INFO 18024 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-01-03 17:55:20.671  INFO 18024 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-01-03 17:55:20.680  INFO 18024 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 6595 ms
+2021-01-03 17:55:22.462  INFO 18024 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-01-03 17:55:22.755  INFO 18024 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.25.Final
+2021-01-03 17:55:23.436  INFO 18024 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-01-03 17:55:23.915  INFO 18024 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-01-03 17:55:24.221  INFO 18024 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-01-03 17:55:24.249  INFO 18024 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2021-01-03 17:55:34.320  INFO 18024 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-01-03 17:55:34.343  INFO 18024 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-01-03 17:55:39.673  INFO 18024 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 092f541a-9db6-4da9-bccc-f2d1aa6cd2e1
+
+2021-01-03 17:55:39.994  INFO 18024 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@467421cc, org.springframework.security.web.context.SecurityContextPersistenceFilter@4d10f182, org.springframework.security.web.header.HeaderWriterFilter@31921151, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7e2f16bd, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@65dd2191, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@eb09112, org.springframework.security.web.session.SessionManagementFilter@35c3d6e8, org.springframework.security.web.access.ExceptionTranslationFilter@7c919e1e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1adec8d]
+2021-01-03 17:55:40.559  INFO 18024 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9091 (http) with context path ''
+2021-01-03 17:55:40.586  INFO 18024 --- [main] ebc.adminapi.AdminApiApplication         : Started AdminApiApplication in 28.513 seconds (JVM running for 32.6)
+2021-01-03 17:57:36.942  INFO 18024 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-01-03 17:57:36.942  INFO 18024 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-01-03 17:57:36.958  INFO 18024 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-01-03 18:53:27.353  INFO 2172 --- [main] ebc.adminapi.AdminApiApplication         : Starting AdminApiApplication using Java 1.8.0_131 on M-LEWES with PID 2172 (D:\C-TFSWorkSpace\IPN\Dev\IPN Management Portal\Admin-API\target\classes started by m.lewes in D:\MyGitHup\Spring-Boot-Demos\ipn-management-portal-root)
+2021-01-03 18:53:27.369  INFO 2172 --- [main] ebc.adminapi.AdminApiApplication         : No active profile set, falling back to default profiles: default
+2021-01-03 18:53:28.681  INFO 2172 --- [main] o.s.c.a.ConfigurationClassParser         : Properties location [classpath:url.properties] not resolvable: class path resource [url.properties] cannot be opened because it does not exist
+2021-01-03 18:53:29.713  INFO 2172 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-01-03 18:53:29.916  INFO 2172 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 177 ms. Found 1 JPA repository interfaces.
+2021-01-03 18:53:29.916  INFO 2172 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-01-03 18:53:30.103  INFO 2172 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 180 ms. Found 11 JPA repository interfaces.
+2021-01-03 18:53:32.619  INFO 2172 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9091 (http)
+2021-01-03 18:53:32.650  INFO 2172 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-03 18:53:32.650  INFO 2172 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-01-03 18:53:33.338  INFO 2172 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-01-03 18:53:33.338  INFO 2172 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5844 ms
+2021-01-03 18:53:33.947  INFO 2172 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-01-03 18:53:34.198  INFO 2172 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.25.Final
+2021-01-03 18:53:35.573  INFO 2172 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-01-03 18:53:36.041  INFO 2172 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-01-03 18:53:36.401  INFO 2172 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-01-03 18:53:36.432  INFO 2172 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2021-01-03 18:53:43.374  INFO 2172 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-01-03 18:53:43.421  INFO 2172 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-01-03 18:53:46.265  INFO 2172 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 398ac690-10a5-4c0a-9308-6273fb974b6f
+
+2021-01-03 18:53:46.515  INFO 2172 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7e0b68e5, org.springframework.security.web.context.SecurityContextPersistenceFilter@67521a79, org.springframework.security.web.header.HeaderWriterFilter@260ccf0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1512efe9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7b9b6a56, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@507fecf3, org.springframework.security.web.session.SessionManagementFilter@363a09a2, org.springframework.security.web.access.ExceptionTranslationFilter@5e8a678a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@28c75c93]
+2021-01-03 18:53:46.953  INFO 2172 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9091 (http) with context path ''
+2021-01-03 18:53:46.984  INFO 2172 --- [main] ebc.adminapi.AdminApiApplication         : Started AdminApiApplication in 20.986 seconds (JVM running for 25.312)
+2021-01-03 20:32:00.472  INFO 2172 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-01-03 20:32:00.488  INFO 2172 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-01-03 20:32:00.488  INFO 2172 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

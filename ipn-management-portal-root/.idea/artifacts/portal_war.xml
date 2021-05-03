@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="portal:war">
+    <output-path>D:/C-TFSWorkSpace/IPN/Dev/IPN Management Portal/Portal/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>portal</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="portal-0.0.1-SNAPSHOT.war">
+      <element id="artifact" artifact-name="portal:war exploded" />
+    </root>
+  </artifact>
+</component>
